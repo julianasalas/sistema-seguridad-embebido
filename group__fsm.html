@@ -1,0 +1,682 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sistema de Seguridad Embebido: Máquina de Estados Finita (FSM)</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Sistema de Seguridad Embebido<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Control de acceso y monitoreo ambiental con FreeRTOS en Arduino Mega</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('group__fsm.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Máquina de Estados Finita (FSM) <div class="ingroups"><a class="el" href="group__sistema__seguridad.html">Sistema de Seguridad</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Diagrama de colaboración de Máquina de Estados Finita (FSM):</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 --></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumeraciones</h2></td></tr>
+<tr class="memitem:ga9d4630b1e0c310d9b8c562abd8114c49" id="r_ga9d4630b1e0c310d9b8c562abd8114c49"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#ga9d4630b1e0c310d9b8c562abd8114c49">Estado</a> { <br />
+&#160;&#160;<a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a402b58fc7dd38c6fcedd7d16f23fdf7f">EST_INICIO</a>
+, <a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a80bb0208316f1fdcd3471dd7e2d52a7e">EST_ABRIENDO</a>
+, <a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a2cf6b904b4aff14aee7d767b64cddc14">EST_CONFIG</a>
+, <a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49af6fa1413339495794c8d2da8b8445492">EST_MONITOR_INTRUSOS</a>
+, <br />
+&#160;&#160;<a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a744ac1522119070468c5ae0610e93ea7">EST_MONITOR_AMBIENTAL</a>
+, <a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49aff9a0e91df1a6b47624989460c83d877">EST_ALARMA</a>
+, <a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49ac5bf8ef4f8992e6442d1561cd35b0144">EST_BLOQUEO</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:ga9d4630b1e0c310d9b8c562abd8114c49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estados de la Máquina de Estados Finita del sistema.  <a href="#ga9d4630b1e0c310d9b8c562abd8114c49">Más...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:gaee03cd25b71f09567dcf074ff59c8046" id="r_gaee03cd25b71f09567dcf074ff59c8046"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#gaee03cd25b71f09567dcf074ff59c8046">irAEstado</a> (<a class="el" href="#ga9d4630b1e0c310d9b8c562abd8114c49">Estado</a> nuevo)</td></tr>
+<tr class="memdesc:gaee03cd25b71f09567dcf074ff59c8046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ejecuta la transición de la FSM al estado indicado.  <br /></td></tr>
+<tr class="memitem:gae74e123e4c1ff81ee9a0c8f4085410fb" id="r_gae74e123e4c1ff81ee9a0c8f4085410fb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#gae74e123e4c1ff81ee9a0c8f4085410fb">activarAlarma</a> (String razon, <a class="el" href="#ga9d4630b1e0c310d9b8c562abd8114c49">Estado</a> origen)</td></tr>
+<tr class="memdesc:gae74e123e4c1ff81ee9a0c8f4085410fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registra y activa una alarma del sistema.  <br /></td></tr>
+<tr class="memitem:gafb90bcd3aa03635c0f7b49cec80f634e" id="r_gafb90bcd3aa03635c0f7b49cec80f634e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#gafb90bcd3aa03635c0f7b49cec80f634e">manejarInicio</a> ()</td></tr>
+<tr class="memdesc:gafb90bcd3aa03635c0f7b49cec80f634e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manejador del estado <span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a402b58fc7dd38c6fcedd7d16f23fdf7f">EST_INICIO</a></span>.  <br /></td></tr>
+<tr class="memitem:ga5f7a9dcc2a087a1d7d9813cb5b7ce098" id="r_ga5f7a9dcc2a087a1d7d9813cb5b7ce098"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga5f7a9dcc2a087a1d7d9813cb5b7ce098">manejarAbriendo</a> ()</td></tr>
+<tr class="memdesc:ga5f7a9dcc2a087a1d7d9813cb5b7ce098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manejador del estado <span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a80bb0208316f1fdcd3471dd7e2d52a7e">EST_ABRIENDO</a></span>.  <br /></td></tr>
+<tr class="memitem:gac808aafeb5903e9b330785699ccb0a6c" id="r_gac808aafeb5903e9b330785699ccb0a6c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#gac808aafeb5903e9b330785699ccb0a6c">manejarAlarma</a> ()</td></tr>
+<tr class="memdesc:gac808aafeb5903e9b330785699ccb0a6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manejador del estado <span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49aff9a0e91df1a6b47624989460c83d877">EST_ALARMA</a></span>.  <br /></td></tr>
+<tr class="memitem:ga2d0a3d09291c6fdbf9bcf10a2c682083" id="r_ga2d0a3d09291c6fdbf9bcf10a2c682083"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga2d0a3d09291c6fdbf9bcf10a2c682083">manejarBloqueo</a> ()</td></tr>
+<tr class="memdesc:ga2d0a3d09291c6fdbf9bcf10a2c682083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manejador del estado <span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49ac5bf8ef4f8992e6442d1561cd35b0144">EST_BLOQUEO</a></span>.  <br /></td></tr>
+<tr class="memitem:ga5ab2ebd90930ec670038414547bf3a55" id="r_ga5ab2ebd90930ec670038414547bf3a55"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga5ab2ebd90930ec670038414547bf3a55">manejarConfig</a> ()</td></tr>
+<tr class="memdesc:ga5ab2ebd90930ec670038414547bf3a55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manejador del estado <span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a2cf6b904b4aff14aee7d767b64cddc14">EST_CONFIG</a></span>.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gaeb43ab74e185f16eaf99a62afb798c50" id="r_gaeb43ab74e185f16eaf99a62afb798c50"><td class="memItemLeft">volatile <a class="el" href="#ga9d4630b1e0c310d9b8c562abd8114c49">Estado</a>&#160;</td><td class="memItemRight"><a class="el" href="#gaeb43ab74e185f16eaf99a62afb798c50">estadoActual</a> = <a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a402b58fc7dd38c6fcedd7d16f23fdf7f">EST_INICIO</a></td></tr>
+<tr class="memdesc:gaeb43ab74e185f16eaf99a62afb798c50"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="#ga9d4630b1e0c310d9b8c562abd8114c49" title="Estados de la Máquina de Estados Finita del sistema.">Estado</a> actual de la FSM. <span class="tt">volatile</span> porque lo modifican varias tareas.  <br /></td></tr>
+<tr class="memitem:gaa97bd97c70672aa6ae19a417802c50be" id="r_gaa97bd97c70672aa6ae19a417802c50be"><td class="memItemLeft"><a class="el" href="#ga9d4630b1e0c310d9b8c562abd8114c49">Estado</a>&#160;</td><td class="memItemRight"><a class="el" href="#gaa97bd97c70672aa6ae19a417802c50be">estadoAnterior</a> = <a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a744ac1522119070468c5ae0610e93ea7">EST_MONITOR_AMBIENTAL</a></td></tr>
+<tr class="memdesc:gaa97bd97c70672aa6ae19a417802c50be"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="#ga9d4630b1e0c310d9b8c562abd8114c49" title="Estados de la Máquina de Estados Finita del sistema.">Estado</a> al que se regresa al finalizar una alarma.  <br /></td></tr>
+<tr class="memitem:ga1a1cd87a804b8e9716361ecc4314a94a" id="r_ga1a1cd87a804b8e9716361ecc4314a94a"><td class="memItemLeft"><a class="el" href="#ga9d4630b1e0c310d9b8c562abd8114c49">Estado</a>&#160;</td><td class="memItemRight"><a class="el" href="#ga1a1cd87a804b8e9716361ecc4314a94a">estadoPost</a> = <a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a744ac1522119070468c5ae0610e93ea7">EST_MONITOR_AMBIENTAL</a></td></tr>
+<tr class="memdesc:ga1a1cd87a804b8e9716361ecc4314a94a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="#ga9d4630b1e0c310d9b8c562abd8114c49" title="Estados de la Máquina de Estados Finita del sistema.">Estado</a> destino al cerrar la puerta tras un acceso exitoso.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descripción detallada</h2>
+<div class="textblock"></div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Documentación de enumeraciones</h2>
+<a id="ga9d4630b1e0c310d9b8c562abd8114c49" name="ga9d4630b1e0c310d9b8c562abd8114c49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9d4630b1e0c310d9b8c562abd8114c49">&#9670;&#160;</a></span>Estado</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga9d4630b1e0c310d9b8c562abd8114c49">Estado</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Estados de la Máquina de Estados Finita del sistema. </p>
+<p>El diagrama completo de transiciones se encuentra en la documentación del archivo principal (sistema_seguridad_doxygen.ino).</p>
+<ul>
+<li><span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a402b58fc7dd38c6fcedd7d16f23fdf7f">EST_INICIO</a></span> — Pantalla de bienvenida; espera RFID o clave.</li>
+<li><span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a80bb0208316f1fdcd3471dd7e2d52a7e">EST_ABRIENDO</a></span> — Servo abierto; cuenta ticks hasta cerrarse.</li>
+<li><span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a2cf6b904b4aff14aee7d767b64cddc14">EST_CONFIG</a></span> — Submenú de configuración de clave y RFID.</li>
+<li><span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49af6fa1413339495794c8d2da8b8445492">EST_MONITOR_INTRUSOS</a></span> — Monitorea movimiento, ruido y puerta abierta.</li>
+<li><span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a744ac1522119070468c5ae0610e93ea7">EST_MONITOR_AMBIENTAL</a></span> — Monitorea temperatura y nivel de luz.</li>
+<li><span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49aff9a0e91df1a6b47624989460c83d877">EST_ALARMA</a></span> — Sirena y LED activos durante N ticks.</li>
+<li><span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49ac5bf8ef4f8992e6442d1561cd35b0144">EST_BLOQUEO</a></span> — Sistema bloqueado; solo admin o botón desbloquea. </li>
+</ul>
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="gga9d4630b1e0c310d9b8c562abd8114c49a402b58fc7dd38c6fcedd7d16f23fdf7f" name="gga9d4630b1e0c310d9b8c562abd8114c49a402b58fc7dd38c6fcedd7d16f23fdf7f"></a>EST_INICIO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga9d4630b1e0c310d9b8c562abd8114c49a80bb0208316f1fdcd3471dd7e2d52a7e" name="gga9d4630b1e0c310d9b8c562abd8114c49a80bb0208316f1fdcd3471dd7e2d52a7e"></a>EST_ABRIENDO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga9d4630b1e0c310d9b8c562abd8114c49a2cf6b904b4aff14aee7d767b64cddc14" name="gga9d4630b1e0c310d9b8c562abd8114c49a2cf6b904b4aff14aee7d767b64cddc14"></a>EST_CONFIG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga9d4630b1e0c310d9b8c562abd8114c49af6fa1413339495794c8d2da8b8445492" name="gga9d4630b1e0c310d9b8c562abd8114c49af6fa1413339495794c8d2da8b8445492"></a>EST_MONITOR_INTRUSOS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga9d4630b1e0c310d9b8c562abd8114c49a744ac1522119070468c5ae0610e93ea7" name="gga9d4630b1e0c310d9b8c562abd8114c49a744ac1522119070468c5ae0610e93ea7"></a>EST_MONITOR_AMBIENTAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga9d4630b1e0c310d9b8c562abd8114c49aff9a0e91df1a6b47624989460c83d877" name="gga9d4630b1e0c310d9b8c562abd8114c49aff9a0e91df1a6b47624989460c83d877"></a>EST_ALARMA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga9d4630b1e0c310d9b8c562abd8114c49ac5bf8ef4f8992e6442d1561cd35b0144" name="gga9d4630b1e0c310d9b8c562abd8114c49ac5bf8ef4f8992e6442d1561cd35b0144"></a>EST_BLOQUEO&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00212">212</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentación de funciones</h2>
+<a id="gae74e123e4c1ff81ee9a0c8f4085410fb" name="gae74e123e4c1ff81ee9a0c8f4085410fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae74e123e4c1ff81ee9a0c8f4085410fb">&#9670;&#160;</a></span>activarAlarma()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void activarAlarma </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>razon</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ga9d4630b1e0c310d9b8c562abd8114c49">Estado</a></td>          <td class="paramname"><span class="paramname"><em>origen</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Registra y activa una alarma del sistema. </p>
+<p>Guarda el estado de origen en <span class="tt"><a class="el" href="#gaa97bd97c70672aa6ae19a417802c50be" title="Estado al que se regresa al finalizar una alarma.">estadoAnterior</a></span> para restaurarlo al finalizar la alarma. Controla el contador de alarmas consecutivas: si la alarma ocurre dentro de <span class="tt"><a class="el" href="group__config.html#gae75f2e171b1b8eb0aad3447545731719" title="Ventana de alarmas consecutivas en ticks (12 s).">TICKS_VENTANA</a></span> ticks desde la anterior, incrementa <span class="tt"><a class="el" href="sistema__seguridad_8cpp.html#a566b8914e6793fc7297631c9abed625c" title="Número de alarmas consecutivas dentro de la ventana TICKS_VENTANA.">alarmasConsec</a></span>; de lo contrario lo reinicia a 1. Al alcanzar <span class="tt"><a class="el" href="group__config.html#gae10a6d060ce1458df07cb532acf3744f" title="Alarmas consecutivas para pasar a BLOQUEO.">MAX_ALARMAS</a></span> alarmas consecutivas, <a class="el" href="#gac808aafeb5903e9b330785699ccb0a6c" title="manejarAlarma()">manejarAlarma()</a> transicionará a <span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49ac5bf8ef4f8992e6442d1561cd35b0144">EST_BLOQUEO</a></span> en lugar de regresar al estado anterior.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">razon</td><td>Cadena de hasta 16 caracteres con la causa de la alarma. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">origen</td><td><a class="el" href="#ga9d4630b1e0c310d9b8c562abd8114c49" title="Estados de la Máquina de Estados Finita del sistema.">Estado</a> desde el cual se dispara la alarma.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section user"><dt>Returns</dt><dd>Nothing.</dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="#gaee03cd25b71f09567dcf074ff59c8046" title="Ejecuta la transición de la FSM al estado indicado.">irAEstado()</a>, <a class="el" href="#gac808aafeb5903e9b330785699ccb0a6c" title="Manejador del estado EST_ALARMA.">manejarAlarma()</a>, <a class="el" href="#gaa97bd97c70672aa6ae19a417802c50be" title="Estado al que se regresa al finalizar una alarma.">estadoAnterior</a>, <a class="el" href="sistema__seguridad_8cpp.html#a566b8914e6793fc7297631c9abed625c" title="Número de alarmas consecutivas dentro de la ventana TICKS_VENTANA.">alarmasConsec</a> </dd></dl>
+<p>&lt;Ventana de alarmas consecutivas en ticks (12 s).</p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00619">619</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="sistema__seguridad_8cpp_source.html#l00269">alarmasConsec</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00218">EST_ALARMA</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00226">estadoAnterior</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00553">irAEstado()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00272">razonAlarma</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00151">TICKS_VENTANA</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00263">ticsGlobal</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00260">ticsUltimaAlarma</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00818">TaskAmbiental()</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00876">TaskIntrusos()</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 1 --></div>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 2 --></div>
+</div>
+
+</div>
+</div>
+<a id="gaee03cd25b71f09567dcf074ff59c8046" name="gaee03cd25b71f09567dcf074ff59c8046"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaee03cd25b71f09567dcf074ff59c8046">&#9670;&#160;</a></span>irAEstado()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void irAEstado </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ga9d4630b1e0c310d9b8c562abd8114c49">Estado</a></td>          <td class="paramname"><span class="paramname"><em>nuevo</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Ejecuta la transición de la FSM al estado indicado. </p>
+<p>Función central de la FSM. En cada transición: </p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md0"></a>
+Actualiza <span class="tt">estadoActual</span>.</h1>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
+Llama a <a class="el" href="group__actuadores.html#ga2a424a53e71040ea1a466f4d0adf0b6a" title="limpiarSalidas()">ga2a424a53e71040ea1a466f4d0adf0b6a</a>.</h1>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
+Reinicia <span class="tt">textoClave</span> y <span class="tt">ticsParpadeo</span>.</h1>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
+Ejecuta las acciones de entrada del estado destino:</h1>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft"><a class="el" href="#ga9d4630b1e0c310d9b8c562abd8114c49" title="Estados de la Máquina de Estados Finita del sistema.">Estado</a> destino  </th><th class="markdownTableHeadLeft">Acción de entrada  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a402b58fc7dd38c6fcedd7d16f23fdf7f">EST_INICIO</a></span>  </td><td class="markdownTableBodyLeft">Muestra pantalla de bienvenida en LCD  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a80bb0208316f1fdcd3471dd7e2d52a7e">EST_ABRIENDO</a></span>  </td><td class="markdownTableBodyLeft">Llama a <a class="el" href="group__actuadores.html#gae1fd3f671724f825c66f4c23af9fd268" title="abrirPuerta()">abrirPuerta()</a>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49af6fa1413339495794c8d2da8b8445492">EST_MONITOR_INTRUSOS</a></span>  </td><td class="markdownTableBodyLeft"><span class="tt">vTaskResume(hIntrusos)</span>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a744ac1522119070468c5ae0610e93ea7">EST_MONITOR_AMBIENTAL</a></span>  </td><td class="markdownTableBodyLeft"><span class="tt">vTaskResume(hAmbiental)</span>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a2cf6b904b4aff14aee7d767b64cddc14">EST_CONFIG</a></span>  </td><td class="markdownTableBodyLeft">Muestra menú de configuración  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49aff9a0e91df1a6b47624989460c83d877">EST_ALARMA</a></span>  </td><td class="markdownTableBodyLeft">Activa buzzer (900 Hz) y <span class="tt"><a class="el" href="group__config.html#ga7885f8a39915e51a832bd4d49a003a97" title="Pin del LED rojo (alarma / bloqueo).">LED_ROJO</a></span>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49ac5bf8ef4f8992e6442d1561cd35b0144">EST_BLOQUEO</a></span>  </td><td class="markdownTableBodyLeft">Activa buzzer (600 Hz) y parpadeo rojo  </td></tr>
+</table>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nuevo</td><td><a class="el" href="#ga9d4630b1e0c310d9b8c562abd8114c49" title="Estados de la Máquina de Estados Finita del sistema.">Estado</a> destino de la transición.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section user"><dt>Returns</dt><dd>Nothing.</dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="#gae74e123e4c1ff81ee9a0c8f4085410fb" title="Registra y activa una alarma del sistema.">activarAlarma()</a>, <a class="el" href="#gac808aafeb5903e9b330785699ccb0a6c" title="Manejador del estado EST_ALARMA.">manejarAlarma()</a>, <a class="el" href="#ga2d0a3d09291c6fdbf9bcf10a2c682083" title="Manejador del estado EST_BLOQUEO.">manejarBloqueo()</a> </dd></dl>
+<p>&lt;Pin del LED rojo (alarma / bloqueo).</p>
+<p>&lt;Pin digital del buzzer pasivo.</p>
+<p>&lt;Pin del LED rojo (alarma / bloqueo).</p>
+<p>&lt;Pin digital del buzzer pasivo.</p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00553">553</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="sistema__seguridad_8cpp_source.html#l00379">abrirPuerta()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00130">BUZZER</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00214">EST_ABRIENDO</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00218">EST_ALARMA</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00219">EST_BLOQUEO</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00215">EST_CONFIG</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00213">EST_INICIO</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00217">EST_MONITOR_AMBIENTAL</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00216">EST_MONITOR_INTRUSOS</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00223">estadoActual</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00280">hAmbiental</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00283">hIntrusos</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00336">lcdEscribir()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00132">LED_ROJO</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00254">ledOn</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00362">limpiarSalidas()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00272">razonAlarma</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00238">textoClave</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00257">ticsAlarma</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00251">ticsParpadeo</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00619">activarAlarma()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l01011">manejarAbriendo()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l01038">manejarAlarma()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l01069">manejarBloqueo()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l01137">manejarConfig()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00963">manejarInicio()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00818">TaskAmbiental()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00776">TaskControl()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00876">TaskIntrusos()</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00657">verificarRFID()</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 3 --></div>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 4 --></div>
+</div>
+
+</div>
+</div>
+<a id="ga5f7a9dcc2a087a1d7d9813cb5b7ce098" name="ga5f7a9dcc2a087a1d7d9813cb5b7ce098"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5f7a9dcc2a087a1d7d9813cb5b7ce098">&#9670;&#160;</a></span>manejarAbriendo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void manejarAbriendo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Manejador del estado <span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a80bb0208316f1fdcd3471dd7e2d52a7e">EST_ABRIENDO</a></span>. </p>
+<p>Incrementa <span class="tt"><a class="el" href="sistema__seguridad_8cpp.html#aee6e22c3ab7c2b88778b595002fa92a4" title="Ticks desde que la puerta quedó abierta.">ticsPuerta</a></span> en cada tick. Al alcanzar <span class="tt"><a class="el" href="group__config.html#gaaebb3efeb5b24e9227e92aacec9b7536" title="Tiempo de puerta abierta en ticks (5 s).">TICKS_PUERTA</a></span> (5 s), llama a <a class="el" href="group__actuadores.html#gaed4c8c6afaab193de8058bd95a226644" title="cerrarPuerta()">cerrarPuerta()</a> y transiciona al estado en <span class="tt"><a class="el" href="#ga1a1cd87a804b8e9716361ecc4314a94a" title="Estado destino al cerrar la puerta tras un acceso exitoso.">estadoPost</a></span> mediante <a class="el" href="#gaee03cd25b71f09567dcf074ff59c8046" title="irAEstado()">irAEstado()</a>.</p>
+<dl class="section user"><dt>Returns</dt><dd>Nothing.</dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="group__actuadores.html#gaed4c8c6afaab193de8058bd95a226644" title="Cierra la puerta girando el servo a 0°.">cerrarPuerta()</a>, <a class="el" href="#gaee03cd25b71f09567dcf074ff59c8046" title="Ejecuta la transición de la FSM al estado indicado.">irAEstado()</a>, <a class="el" href="#ga1a1cd87a804b8e9716361ecc4314a94a" title="Estado destino al cerrar la puerta tras un acceso exitoso.">estadoPost</a>, <a class="el" href="group__config.html#gaaebb3efeb5b24e9227e92aacec9b7536" title="Tiempo de puerta abierta en ticks (5 s).">TICKS_PUERTA</a> </dd></dl>
+<p>&lt;Tiempo de puerta abierta en ticks (5 s).</p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l01011">1011</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="sistema__seguridad_8cpp_source.html#l00399">cerrarPuerta()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00229">estadoPost</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00553">irAEstado()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00152">TICKS_PUERTA</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00266">ticsPuerta</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00776">TaskControl()</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 5 --></div>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 6 --></div>
+</div>
+
+</div>
+</div>
+<a id="gac808aafeb5903e9b330785699ccb0a6c" name="gac808aafeb5903e9b330785699ccb0a6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac808aafeb5903e9b330785699ccb0a6c">&#9670;&#160;</a></span>manejarAlarma()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void manejarAlarma </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Manejador del estado <span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49aff9a0e91df1a6b47624989460c83d877">EST_ALARMA</a></span>. </p>
+<p>Gestiona el parpadeo del LED rojo y la duración total de la alarma usando únicamente contadores de ticks:</p><ul>
+<li>LED encendido <span class="tt"><a class="el" href="group__config.html#ga866b441576fb29616f923b5046e6358e" title="Ticks encendido en ALARMA (100 ms).">TICKS_PARP_ON</a></span> ticks → apagado (noTone).</li>
+<li>LED apagado <span class="tt"><a class="el" href="group__config.html#ga67beb9c1dec745d7bbe6748851a7f997" title="Ticks apagado en ALARMA (500 ms).">TICKS_PARP_OFF</a></span> ticks → encendido (tone 900 Hz).</li>
+</ul>
+<p>Al cumplirse <span class="tt"><a class="el" href="group__config.html#ga3a92bd2695be33804aee70b537d75e8d" title="Duración de la alarma en ticks (2 s).">TICKS_ALARMA</a></span> ticks totales, limpia salidas y:</p><ul>
+<li><span class="tt"><a class="el" href="sistema__seguridad_8cpp.html#a566b8914e6793fc7297631c9abed625c" title="Número de alarmas consecutivas dentro de la ventana TICKS_VENTANA.">alarmasConsec</a> &gt;= <a class="el" href="group__config.html#gae10a6d060ce1458df07cb532acf3744f" title="Alarmas consecutivas para pasar a BLOQUEO.">MAX_ALARMAS</a></span> → <a class="el" href="#gaee03cd25b71f09567dcf074ff59c8046" title="irAEstado()">irAEstado()</a> a <span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49ac5bf8ef4f8992e6442d1561cd35b0144">EST_BLOQUEO</a></span>.</li>
+<li>En caso contrario → <a class="el" href="#gaee03cd25b71f09567dcf074ff59c8046" title="irAEstado()">irAEstado()</a> a <span class="tt"><a class="el" href="#gaa97bd97c70672aa6ae19a417802c50be" title="Estado al que se regresa al finalizar una alarma.">estadoAnterior</a></span>.</li>
+</ul>
+<dl class="section user"><dt>Returns</dt><dd>Nothing.</dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="#gae74e123e4c1ff81ee9a0c8f4085410fb" title="Registra y activa una alarma del sistema.">activarAlarma()</a>, <a class="el" href="#gaee03cd25b71f09567dcf074ff59c8046" title="Ejecuta la transición de la FSM al estado indicado.">irAEstado()</a>, <a class="el" href="sistema__seguridad_8cpp.html#a566b8914e6793fc7297631c9abed625c" title="Número de alarmas consecutivas dentro de la ventana TICKS_VENTANA.">alarmasConsec</a>, <a class="el" href="#gaa97bd97c70672aa6ae19a417802c50be" title="Estado al que se regresa al finalizar una alarma.">estadoAnterior</a> </dd></dl>
+<p>&lt;Ticks encendido en ALARMA (100 ms).</p>
+<p>&lt;Pin del LED rojo (alarma / bloqueo).</p>
+<p>&lt;Pin digital del buzzer pasivo.</p>
+<p>&lt;Ticks apagado en ALARMA (500 ms).</p>
+<p>&lt;Pin del LED rojo (alarma / bloqueo).</p>
+<p>&lt;Pin digital del buzzer pasivo.</p>
+<p>&lt;Duración de la alarma en ticks (2 s).</p>
+<p>&lt;Alarmas consecutivas para pasar a BLOQUEO.</p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l01038">1038</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="sistema__seguridad_8cpp_source.html#l00269">alarmasConsec</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00130">BUZZER</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00219">EST_BLOQUEO</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00226">estadoAnterior</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00553">irAEstado()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00132">LED_ROJO</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00254">ledOn</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00362">limpiarSalidas()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00177">MAX_ALARMAS</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00150">TICKS_ALARMA</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00162">TICKS_PARP_OFF</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00161">TICKS_PARP_ON</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00257">ticsAlarma</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00251">ticsParpadeo</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00776">TaskControl()</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 7 --></div>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 8 --></div>
+</div>
+
+</div>
+</div>
+<a id="ga2d0a3d09291c6fdbf9bcf10a2c682083" name="ga2d0a3d09291c6fdbf9bcf10a2c682083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2d0a3d09291c6fdbf9bcf10a2c682083">&#9670;&#160;</a></span>manejarBloqueo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void manejarBloqueo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Manejador del estado <span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49ac5bf8ef4f8992e6442d1561cd35b0144">EST_BLOQUEO</a></span>. </p>
+<p>Parpadea el LED rojo con tiempos distintos al de alarma (<span class="tt"><a class="el" href="group__config.html#ga0934f5d63d0bf48ea639eec42c3e84d2" title="Ticks encendido en BLOQUEO (300 ms).">TICKS_PARP_BLQ_ON</a></span> / <span class="tt"><a class="el" href="group__config.html#ga1080b83ad31fa8ce57c473fbe6b05dcf" title="Ticks apagado en BLOQUEO (700 ms).">TICKS_PARP_BLQ_OFF</a></span>) para diferenciación visual.</p>
+<p>El sistema se desbloquea de dos formas:</p><ul>
+<li><b>Botón físico</b> — <a class="el" href="group__actuadores.html#ga9040ae03ed89ee4cdb3e20193ae912b9" title="botonPresionado()">botonPresionado()</a> retorna <span class="tt">true</span>: reinicia contadores y llama a <a class="el" href="#gaee03cd25b71f09567dcf074ff59c8046" title="irAEstado()">irAEstado()</a> a <span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a402b58fc7dd38c6fcedd7d16f23fdf7f">EST_INICIO</a></span>.</li>
+<li><b>Clave de administrador</b> — el operador ingresa <span class="tt">claveAdmin</span> y confirma con <span class="tt">'#'</span>:<ul>
+<li>Correcta → <a class="el" href="#gaee03cd25b71f09567dcf074ff59c8046" title="irAEstado()">irAEstado()</a> a <span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a2cf6b904b4aff14aee7d767b64cddc14">EST_CONFIG</a></span>.</li>
+<li>Incorrecta → mensaje de error y regresa a pantalla de bloqueo.</li>
+</ul>
+</li>
+</ul>
+<dl class="section user"><dt>Returns</dt><dd>Nothing.</dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="group__actuadores.html#ga9040ae03ed89ee4cdb3e20193ae912b9" title="Detecta la pulsación del botón físico con anti-rebote por ticks.">botonPresionado()</a>, <a class="el" href="#gaee03cd25b71f09567dcf074ff59c8046" title="Ejecuta la transición de la FSM al estado indicado.">irAEstado()</a>, claveAdmin </dd></dl>
+<p>&lt;Ticks encendido en BLOQUEO (300 ms).</p>
+<p>&lt;Pin del LED rojo (alarma / bloqueo).</p>
+<p>&lt;Pin digital del buzzer pasivo.</p>
+<p>&lt;Ticks apagado en BLOQUEO (700 ms).</p>
+<p>&lt;Pin del LED rojo (alarma / bloqueo).</p>
+<p>&lt;Pin digital del buzzer pasivo.</p>
+<p>&lt;Pin digital del buzzer pasivo.</p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l01069">1069</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="sistema__seguridad_8cpp_source.html#l00269">alarmasConsec</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00417">botonPresionado()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00130">BUZZER</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00215">EST_CONFIG</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00213">EST_INICIO</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00217">EST_MONITOR_AMBIENTAL</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00226">estadoAnterior</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00241">intentosFallidos</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00553">irAEstado()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00111">keypad</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00336">lcdEscribir()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00132">LED_ROJO</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00254">ledOn</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00362">limpiarSalidas()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00238">textoClave</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00164">TICKS_PARP_BLQ_OFF</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00163">TICKS_PARP_BLQ_ON</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00251">ticsParpadeo</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00776">TaskControl()</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 9 --></div>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 10 --></div>
+</div>
+
+</div>
+</div>
+<a id="ga5ab2ebd90930ec670038414547bf3a55" name="ga5ab2ebd90930ec670038414547bf3a55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5ab2ebd90930ec670038414547bf3a55">&#9670;&#160;</a></span>manejarConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void manejarConfig </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Manejador del estado <span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a2cf6b904b4aff14aee7d767b64cddc14">EST_CONFIG</a></span>. </p>
+<p>Gestiona un submenú de dos opciones usando la variable estática <span class="tt">submenu</span>:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter"><span class="tt">submenu</span>  </th><th class="markdownTableHeadLeft">Descripción  </th><th class="markdownTableHeadLeft">Confirmación  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">0  </td><td class="markdownTableBodyLeft">Menú principal (teclas 1, 2, *)  </td><td class="markdownTableBodyLeft">—  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">1  </td><td class="markdownTableBodyLeft">Cambio de clave de usuario  </td><td class="markdownTableBodyLeft"><span class="tt">'#'</span>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">2  </td><td class="markdownTableBodyLeft">Registro de nueva tarjeta RFID  </td><td class="markdownTableBodyLeft">Lectura RFID  </td></tr>
+</table>
+<p><b>Submenú 1 (cambio de clave):</b> Acumula dígitos; <span class="tt">'#'</span> guarda si hay ≥4 dígitos en <span class="tt">claveCorrecta</span>; <span class="tt">'*'</span> cancela.</p>
+<p><b>Submenú 2 (registro RFID):</b> Espera lectura del MFRC522 y guarda el UID en <span class="tt">uidAutorizado</span>; <span class="tt">'*'</span> cancela.</p>
+<p>La tecla <span class="tt">'*'</span> en el menú principal llama a <a class="el" href="#gaee03cd25b71f09567dcf074ff59c8046" title="irAEstado()">irAEstado()</a> con <span class="tt"><a class="el" href="#gaa97bd97c70672aa6ae19a417802c50be" title="Estado al que se regresa al finalizar una alarma.">estadoAnterior</a></span>.</p>
+<dl class="section user"><dt>Returns</dt><dd>Nothing.</dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="#gaee03cd25b71f09567dcf074ff59c8046" title="Ejecuta la transición de la FSM al estado indicado.">irAEstado()</a>, claveCorrecta, uidAutorizado </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l01137">1137</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="sistema__seguridad_8cpp_source.html#l00226">estadoAnterior</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00553">irAEstado()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00111">keypad</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00336">lcdEscribir()</a>, <a class="el" href="group__hardware.html#ga3dfc78456f71b1381f9c7021a01efc95">rfid()</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00238">textoClave</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00776">TaskControl()</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 11 --></div>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 12 --></div>
+</div>
+
+</div>
+</div>
+<a id="gafb90bcd3aa03635c0f7b49cec80f634e" name="gafb90bcd3aa03635c0f7b49cec80f634e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafb90bcd3aa03635c0f7b49cec80f634e">&#9670;&#160;</a></span>manejarInicio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void manejarInicio </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Manejador del estado <span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a402b58fc7dd38c6fcedd7d16f23fdf7f">EST_INICIO</a></span>. </p>
+<p>Invocado por <a class="el" href="group__tareas.html#gabf2ea295dd40f5ef9c4104310ad3d0d7" title="TaskControl">TaskControl</a> en cada tick. Llama a <a class="el" href="group__hardware.html#gada75dfc0a4a2cbd90fb6b3f8228b2590" title="verificarRFID()">verificarRFID()</a> y lee el teclado:</p><ul>
+<li><span class="tt">'*'</span> — Limpia <span class="tt"><a class="el" href="sistema__seguridad_8cpp.html#aa1a9ca5f84ae0b9bf451a46157393987" title="Dígitos acumulados desde el teclado durante el ingreso de clave.">textoClave</a></span> y remuestra la pantalla de bienvenida.</li>
+<li><span class="tt">'#'</span> — Evalúa la clave:<ul>
+<li>Correcta → beep + <a class="el" href="#gaee03cd25b71f09567dcf074ff59c8046" title="irAEstado()">irAEstado()</a> a <span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a80bb0208316f1fdcd3471dd7e2d52a7e">EST_ABRIENDO</a></span>.</li>
+<li>Incorrecta → incrementa <span class="tt"><a class="el" href="sistema__seguridad_8cpp.html#a35c6d852422d51628a060ad8f323746e" title="Intentos de acceso fallidos (clave o RFID). Se reinicia al desbloquear.">intentosFallidos</a></span>; al llegar a 3, llama a <a class="el" href="#gaee03cd25b71f09567dcf074ff59c8046" title="irAEstado()">irAEstado()</a> a <span class="tt"><a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49ac5bf8ef4f8992e6442d1561cd35b0144">EST_BLOQUEO</a></span>.</li>
+</ul>
+</li>
+<li>Dígito — Concatena a <span class="tt"><a class="el" href="sistema__seguridad_8cpp.html#aa1a9ca5f84ae0b9bf451a46157393987" title="Dígitos acumulados desde el teclado durante el ingreso de clave.">textoClave</a></span> y muestra asteriscos en el LCD.</li>
+</ul>
+<dl class="section user"><dt>Returns</dt><dd>Nothing.</dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="group__hardware.html#gada75dfc0a4a2cbd90fb6b3f8228b2590" title="Lee una tarjeta RFID y autoriza o deniega el acceso.">verificarRFID()</a>, <a class="el" href="#gaee03cd25b71f09567dcf074ff59c8046" title="Ejecuta la transición de la FSM al estado indicado.">irAEstado()</a>, <a class="el" href="sistema__seguridad_8cpp.html#a35c6d852422d51628a060ad8f323746e" title="Intentos de acceso fallidos (clave o RFID). Se reinicia al desbloquear.">intentosFallidos</a> </dd></dl>
+<p>&lt;Pin digital del buzzer pasivo.</p>
+<p>&lt;Pin del LED rojo (alarma / bloqueo).</p>
+<p>&lt;Pin digital del buzzer pasivo.</p>
+<p>&lt;Duración del mensaje de error en ticks (1.5 s).</p>
+<p>&lt;Duración de cada tick de control en ms.</p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00963">963</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="sistema__seguridad_8cpp_source.html#l00130">BUZZER</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00214">EST_ABRIENDO</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00219">EST_BLOQUEO</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00217">EST_MONITOR_AMBIENTAL</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00229">estadoPost</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00241">intentosFallidos</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00553">irAEstado()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00111">keypad</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00336">lcdEscribir()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00132">LED_ROJO</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00362">limpiarSalidas()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00147">PASO_MS</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00238">textoClave</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00153">TICKS_MSG_ERROR</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00657">verificarRFID()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00776">TaskControl()</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 13 --></div>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 14 --></div>
+</div>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Documentación de variables</h2>
+<a id="gaeb43ab74e185f16eaf99a62afb798c50" name="gaeb43ab74e185f16eaf99a62afb798c50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeb43ab74e185f16eaf99a62afb798c50">&#9670;&#160;</a></span>estadoActual</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile <a class="el" href="#ga9d4630b1e0c310d9b8c562abd8114c49">Estado</a> estadoActual = <a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a402b58fc7dd38c6fcedd7d16f23fdf7f">EST_INICIO</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p><a class="el" href="#ga9d4630b1e0c310d9b8c562abd8114c49" title="Estados de la Máquina de Estados Finita del sistema.">Estado</a> actual de la FSM. <span class="tt">volatile</span> porque lo modifican varias tareas. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00223">223</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00553">irAEstado()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00818">TaskAmbiental()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00776">TaskControl()</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00876">TaskIntrusos()</a>.</p>
+
+</div>
+</div>
+<a id="gaa97bd97c70672aa6ae19a417802c50be" name="gaa97bd97c70672aa6ae19a417802c50be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa97bd97c70672aa6ae19a417802c50be">&#9670;&#160;</a></span>estadoAnterior</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ga9d4630b1e0c310d9b8c562abd8114c49">Estado</a> estadoAnterior = <a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a744ac1522119070468c5ae0610e93ea7">EST_MONITOR_AMBIENTAL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p><a class="el" href="#ga9d4630b1e0c310d9b8c562abd8114c49" title="Estados de la Máquina de Estados Finita del sistema.">Estado</a> al que se regresa al finalizar una alarma. </p>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="#gae74e123e4c1ff81ee9a0c8f4085410fb" title="Registra y activa una alarma del sistema.">activarAlarma()</a> </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00226">226</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00619">activarAlarma()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l01038">manejarAlarma()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l01069">manejarBloqueo()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l01137">manejarConfig()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00818">TaskAmbiental()</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00876">TaskIntrusos()</a>.</p>
+
+</div>
+</div>
+<a id="ga1a1cd87a804b8e9716361ecc4314a94a" name="ga1a1cd87a804b8e9716361ecc4314a94a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1a1cd87a804b8e9716361ecc4314a94a">&#9670;&#160;</a></span>estadoPost</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ga9d4630b1e0c310d9b8c562abd8114c49">Estado</a> estadoPost = <a class="el" href="#gga9d4630b1e0c310d9b8c562abd8114c49a744ac1522119070468c5ae0610e93ea7">EST_MONITOR_AMBIENTAL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p><a class="el" href="#ga9d4630b1e0c310d9b8c562abd8114c49" title="Estados de la Máquina de Estados Finita del sistema.">Estado</a> destino al cerrar la puerta tras un acceso exitoso. </p>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="#ga5f7a9dcc2a087a1d7d9813cb5b7ce098" title="Manejador del estado EST_ABRIENDO.">manejarAbriendo()</a> </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00229">229</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l01011">manejarAbriendo()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00963">manejarInicio()</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00657">verificarRFID()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sistema de Seguridad Embebido: Tareas FreeRTOS</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Sistema de Seguridad Embebido<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Control de acceso y monitoreo ambiental con FreeRTOS en Arduino Mega</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('group__tareas.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Tareas FreeRTOS <div class="ingroups"><a class="el" href="group__sistema__seguridad.html">Sistema de Seguridad</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Diagrama de colaboración de Tareas FreeRTOS:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 --></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:gabf2ea295dd40f5ef9c4104310ad3d0d7" id="r_gabf2ea295dd40f5ef9c4104310ad3d0d7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#gabf2ea295dd40f5ef9c4104310ad3d0d7">TaskControl</a> (void *pv)</td></tr>
+<tr class="memdesc:gabf2ea295dd40f5ef9c4104310ad3d0d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tarea FreeRTOS principal: ciclo de despacho de la FSM.  <br /></td></tr>
+<tr class="memitem:ga68f0ae52239a006625901567e8dfe5a5" id="r_ga68f0ae52239a006625901567e8dfe5a5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga68f0ae52239a006625901567e8dfe5a5">TaskAmbiental</a> (void *pv)</td></tr>
+<tr class="memdesc:ga68f0ae52239a006625901567e8dfe5a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tarea FreeRTOS de monitoreo ambiental (temperatura y luz).  <br /></td></tr>
+<tr class="memitem:ga9603b1c503abd2bd6f6e355fed914150" id="r_ga9603b1c503abd2bd6f6e355fed914150"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga9603b1c503abd2bd6f6e355fed914150">TaskIntrusos</a> (void *pv)</td></tr>
+<tr class="memdesc:ga9603b1c503abd2bd6f6e355fed914150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tarea FreeRTOS de monitoreo de intrusos.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga629b7df510f29c79d5c03966717018a7" id="r_ga629b7df510f29c79d5c03966717018a7"><td class="memItemLeft">TaskHandle_t&#160;</td><td class="memItemRight"><a class="el" href="#ga629b7df510f29c79d5c03966717018a7">hAmbiental</a> = NULL</td></tr>
+<tr class="memdesc:ga629b7df510f29c79d5c03966717018a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle de la tarea de monitoreo ambiental (<a class="el" href="#ga68f0ae52239a006625901567e8dfe5a5" title="TaskAmbiental">TaskAmbiental</a>).  <br /></td></tr>
+<tr class="memitem:ga2813fede67f8c3415ab1f1c6362bb1c5" id="r_ga2813fede67f8c3415ab1f1c6362bb1c5"><td class="memItemLeft">TaskHandle_t&#160;</td><td class="memItemRight"><a class="el" href="#ga2813fede67f8c3415ab1f1c6362bb1c5">hIntrusos</a> = NULL</td></tr>
+<tr class="memdesc:ga2813fede67f8c3415ab1f1c6362bb1c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle de la tarea de monitoreo de intrusos (<a class="el" href="#ga9603b1c503abd2bd6f6e355fed914150" title="TaskIntrusos">TaskIntrusos</a>).  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descripción detallada</h2>
+<div class="textblock"></div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentación de funciones</h2>
+<a id="ga68f0ae52239a006625901567e8dfe5a5" name="ga68f0ae52239a006625901567e8dfe5a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga68f0ae52239a006625901567e8dfe5a5">&#9670;&#160;</a></span>TaskAmbiental()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TaskAmbiental </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>pv</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Tarea FreeRTOS de monitoreo ambiental (temperatura y luz). </p>
+<p>Se suspende al crearse y se reanuda desde <a class="el" href="group__fsm.html#gaee03cd25b71f09567dcf074ff59c8046" title="irAEstado()">irAEstado()</a> cuando el estado destino es <span class="tt"><a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49a744ac1522119070468c5ae0610e93ea7">EST_MONITOR_AMBIENTAL</a></span>. En cada ciclo de <span class="tt"><a class="el" href="group__config.html#ga360d7a70aedc974c64f66eee84f744a7" title="Duración del modo ambiental en ticks (5 s).">CICLOS_AMBIENTAL</a></span> ticks (5 s):</p>
+<ul>
+<li>Lee <a class="el" href="group__sensores.html#gab96dd9550872ccc75be0a22d78a79863" title="leerTemp()">leerTemp()</a> y <a class="el" href="group__sensores.html#ga29e92705724ea23b5b79bc544e335cc2" title="leerLuz()">leerLuz()</a> cada tick.</li>
+<li>Actualiza el LCD cada 10 ticks con valores en tiempo real.</li>
+<li><span class="tt">temp &lt; <a class="el" href="group__config.html#ga75f7a864e4a04089bdb5f6b57c55105e" title="Temperatura mínima en °C antes de alarma.">UMBRAL_TEMP</a></span> → llama a <a class="el" href="group__fsm.html#gae74e123e4c1ff81ee9a0c8f4085410fb" title="activarAlarma()">activarAlarma()</a> con <span class="tt">"TEMP BAJA &lt;20C"</span>.</li>
+<li><span class="tt">luz  &lt; <a class="el" href="group__config.html#ga532ab754224e2d897d84f4b61abbb604" title="ADC mínimo KY-018; por debajo = oscuridad.">UMBRAL_LUZ</a></span> → llama a <a class="el" href="group__fsm.html#gae74e123e4c1ff81ee9a0c8f4085410fb" title="activarAlarma()">activarAlarma()</a> con <span class="tt">"LUZ BAJA"</span>.</li>
+<li>Tecla <span class="tt">'*'</span> → transiciona a <span class="tt"><a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49a2cf6b904b4aff14aee7d767b64cddc14">EST_CONFIG</a></span>.</li>
+</ul>
+<p>Al finalizar el ciclo sin incidencias, cede a <span class="tt"><a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49af6fa1413339495794c8d2da8b8445492">EST_MONITOR_INTRUSOS</a></span> y se suspende de nuevo.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pv</td><td>Parámetro de tarea FreeRTOS (no usado; pásese <span class="tt">NULL</span>).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section user"><dt>Returns</dt><dd>Nothing.</dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="group__sensores.html#gab96dd9550872ccc75be0a22d78a79863" title="Lee la temperatura con el termistor NTC del KY-013.">leerTemp()</a>, <a class="el" href="group__sensores.html#ga29e92705724ea23b5b79bc544e335cc2" title="Lee el nivel de iluminación con el KY-018 (LDR).">leerLuz()</a>, <a class="el" href="group__fsm.html#gae74e123e4c1ff81ee9a0c8f4085410fb" title="Registra y activa una alarma del sistema.">activarAlarma()</a>, <a class="el" href="#ga9603b1c503abd2bd6f6e355fed914150" title="Tarea FreeRTOS de monitoreo de intrusos.">TaskIntrusos()</a> </dd></dl>
+<p>&lt;Duración de cada tick de control en ms.</p>
+<p>&lt;Duración del modo ambiental en ticks (5 s).</p>
+<p>&lt;Temperatura mínima en °C antes de alarma.</p>
+<p>&lt;ADC mínimo KY-018; por debajo = oscuridad.</p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00818">818</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="sistema__seguridad_8cpp_source.html#l00619">activarAlarma()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00148">CICLOS_AMBIENTAL</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00215">EST_CONFIG</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00217">EST_MONITOR_AMBIENTAL</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00216">EST_MONITOR_INTRUSOS</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00223">estadoActual</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00226">estadoAnterior</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00553">irAEstado()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00111">keypad</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00336">lcdEscribir()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00477">leerLuz()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00455">leerTemp()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00362">limpiarSalidas()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00147">PASO_MS</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00171">UMBRAL_LUZ</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00175">UMBRAL_TEMP</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00711">setup()</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 1 --></div>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 2 --></div>
+</div>
+
+</div>
+</div>
+<a id="gabf2ea295dd40f5ef9c4104310ad3d0d7" name="gabf2ea295dd40f5ef9c4104310ad3d0d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabf2ea295dd40f5ef9c4104310ad3d0d7">&#9670;&#160;</a></span>TaskControl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TaskControl </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>pv</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Tarea FreeRTOS principal: ciclo de despacho de la FSM. </p>
+<p>Se ejecuta cada <span class="tt"><a class="el" href="group__config.html#ga2855646e72b7f7e4051eb5b2bd911dbc" title="Duración de cada tick de control en ms.">PASO_MS</a></span> ms. En cada iteración: </p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md10"></a>
+Incrementa <span class="tt">ticsGlobal</span>.</h1>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md11"></a>
+Despacha al manejador del estado activo:</h1>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft"><a class="el" href="group__fsm.html#ga9d4630b1e0c310d9b8c562abd8114c49" title="Estados de la Máquina de Estados Finita del sistema.">Estado</a> activo  </th><th class="markdownTableHeadLeft">Manejador invocado  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><span class="tt"><a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49a402b58fc7dd38c6fcedd7d16f23fdf7f">EST_INICIO</a></span>  </td><td class="markdownTableBodyLeft"><a class="el" href="group__fsm.html#gafb90bcd3aa03635c0f7b49cec80f634e" title="manejarInicio()">manejarInicio()</a>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><span class="tt"><a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49a80bb0208316f1fdcd3471dd7e2d52a7e">EST_ABRIENDO</a></span>  </td><td class="markdownTableBodyLeft"><a class="el" href="group__fsm.html#ga5f7a9dcc2a087a1d7d9813cb5b7ce098" title="manejarAbriendo()">manejarAbriendo()</a>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><span class="tt"><a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49a2cf6b904b4aff14aee7d767b64cddc14">EST_CONFIG</a></span>  </td><td class="markdownTableBodyLeft"><a class="el" href="group__fsm.html#ga5ab2ebd90930ec670038414547bf3a55" title="manejarConfig()">manejarConfig()</a>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><span class="tt"><a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49aff9a0e91df1a6b47624989460c83d877">EST_ALARMA</a></span>  </td><td class="markdownTableBodyLeft"><a class="el" href="group__fsm.html#gac808aafeb5903e9b330785699ccb0a6c" title="manejarAlarma()">manejarAlarma()</a>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><span class="tt"><a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49ac5bf8ef4f8992e6442d1561cd35b0144">EST_BLOQUEO</a></span>  </td><td class="markdownTableBodyLeft"><a class="el" href="group__fsm.html#ga2d0a3d09291c6fdbf9bcf10a2c682083" title="manejarBloqueo()">manejarBloqueo()</a>  </td></tr>
+</table>
+<p>Los estados <span class="tt"><a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49af6fa1413339495794c8d2da8b8445492">EST_MONITOR_INTRUSOS</a></span> y <span class="tt"><a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49a744ac1522119070468c5ae0610e93ea7">EST_MONITOR_AMBIENTAL</a></span> son gestionados por sus propias tareas (<a class="el" href="#ga9603b1c503abd2bd6f6e355fed914150" title="TaskIntrusos">TaskIntrusos</a>, <a class="el" href="#ga68f0ae52239a006625901567e8dfe5a5" title="TaskAmbiental">TaskAmbiental</a>) que se suspenden y reanudan según sea necesario.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pv</td><td>Parámetro de tarea FreeRTOS (no usado; pásese <span class="tt">NULL</span>).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section user"><dt>Returns</dt><dd>Nothing. </dd></dl>
+<p>&lt;Duración de cada tick de control en ms.</p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00776">776</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="sistema__seguridad_8cpp_source.html#l00214">EST_ABRIENDO</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00218">EST_ALARMA</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00219">EST_BLOQUEO</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00215">EST_CONFIG</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00213">EST_INICIO</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00223">estadoActual</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00553">irAEstado()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l01011">manejarAbriendo()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l01038">manejarAlarma()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l01069">manejarBloqueo()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l01137">manejarConfig()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00963">manejarInicio()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00147">PASO_MS</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00263">ticsGlobal</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00711">setup()</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 3 --></div>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 4 --></div>
+</div>
+
+</div>
+</div>
+<a id="ga9603b1c503abd2bd6f6e355fed914150" name="ga9603b1c503abd2bd6f6e355fed914150"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9603b1c503abd2bd6f6e355fed914150">&#9670;&#160;</a></span>TaskIntrusos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TaskIntrusos </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>pv</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Tarea FreeRTOS de monitoreo de intrusos. </p>
+<p>Se suspende al crearse y se reanuda desde <a class="el" href="group__fsm.html#gaee03cd25b71f09567dcf074ff59c8046" title="irAEstado()">irAEstado()</a> cuando el estado destino es <span class="tt"><a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49af6fa1413339495794c8d2da8b8445492">EST_MONITOR_INTRUSOS</a></span>. En cada ciclo de <span class="tt"><a class="el" href="group__config.html#gaba36eab096ee0a1261387fd3a709c946" title="Duración del modo intrusos en ticks (2 s).">CICLOS_INTRUSOS</a></span> ticks (2 s) evalúa tres fuentes de amenaza:</p>
+<p><b>1. Puerta abierta</b> (<a class="el" href="group__sensores.html#ga1073cc7ee88838657a31f2166d08373e" title="puertaAb()">puertaAb()</a>) Tres ticks consecutivos positivos disparan <span class="tt">"PUERTA ABIERTA"</span>.</p>
+<p><b>2. Campo magnético</b> (<a class="el" href="group__sensores.html#ga3d2ab528c2b581372c8e78a8ed8d0456" title="hallDet()">hallDet()</a>) Tres ticks consecutivos positivos disparan <span class="tt">"MOVIMIENTO DET."</span>.</p>
+<p><b>3. Micrófono</b> (<a class="el" href="group__sensores.html#ga977c1be0b0a923cefb4fc18c85f77ae1" title="leerMic()">leerMic()</a>) — lógica de eventos acumulados:</p><ul>
+<li><span class="tt"><a class="el" href="group__config.html#ga5a23a12625b136b9500d3e24c4d926fd" title="Ticks con ruido para confirmar un evento (300 ms).">MIC_LECTURAS_EVENTO</a></span> ticks con ruido → evento confirmado.</li>
+<li>Evento termina tras <span class="tt"><a class="el" href="group__config.html#gacd24138ed8c4938ffa2c2d6de7478197" title="Ticks sin ruido para cerrar un evento (500 ms).">MIC_TICKS_SILENCIO</a></span> ticks sin ruido.</li>
+<li><span class="tt"><a class="el" href="group__config.html#ga36424988dbbeab73a594beab733f6517" title="Eventos confirmados que disparan alarma.">MIC_EVENTOS_ALARMA</a></span> eventos → alarma <span class="tt">"RUIDO DETECTADO"</span>.</li>
+<li><span class="tt"><a class="el" href="group__config.html#ga92f323020fc7b609b5577519356ccf72" title="Ticks sin evento para olvidar acumulados (15 s).">MIC_TICKS_VENTANA</a></span> ticks sin evento → contador reiniciado.</li>
+</ul>
+<p>Tecla <span class="tt">'#'</span> transiciona a <span class="tt"><a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49a2cf6b904b4aff14aee7d767b64cddc14">EST_CONFIG</a></span>. Al finalizar el ciclo sin incidencias, cede a <span class="tt"><a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49a744ac1522119070468c5ae0610e93ea7">EST_MONITOR_AMBIENTAL</a></span> y se suspende de nuevo.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pv</td><td>Parámetro de tarea FreeRTOS (no usado; pásese <span class="tt">NULL</span>).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section user"><dt>Returns</dt><dd>Nothing.</dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="group__sensores.html#ga1073cc7ee88838657a31f2166d08373e" title="Consulta el estado lógico de la puerta.">puertaAb()</a>, <a class="el" href="group__sensores.html#ga3d2ab528c2b581372c8e78a8ed8d0456" title="Detecta campo magnético con el sensor Hall KY-035.">hallDet()</a>, <a class="el" href="group__sensores.html#ga977c1be0b0a923cefb4fc18c85f77ae1" title="Lee el nivel de ruido con el KY-037 (micrófono).">leerMic()</a>, <a class="el" href="group__fsm.html#gae74e123e4c1ff81ee9a0c8f4085410fb" title="Registra y activa una alarma del sistema.">activarAlarma()</a>, <a class="el" href="#ga68f0ae52239a006625901567e8dfe5a5" title="Tarea FreeRTOS de monitoreo ambiental (temperatura y luz).">TaskAmbiental()</a> </dd></dl>
+<p>&lt;Duración de cada tick de control en ms.</p>
+<p>&lt;Duración del modo intrusos en ticks (2 s).</p>
+<p>&lt;ADC mínimo KY-037; por encima = ruido.</p>
+<p>&lt;Ticks con ruido para confirmar un evento (300 ms).</p>
+<p>&lt;Eventos confirmados que disparan alarma.</p>
+<p>&lt;Ticks sin ruido para cerrar un evento (500 ms).</p>
+<p>&lt;Ticks sin evento para olvidar acumulados (15 s).</p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00876">876</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="sistema__seguridad_8cpp_source.html#l00619">activarAlarma()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00149">CICLOS_INTRUSOS</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00215">EST_CONFIG</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00217">EST_MONITOR_AMBIENTAL</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00216">EST_MONITOR_INTRUSOS</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00223">estadoActual</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00226">estadoAnterior</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00517">hallDet()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00553">irAEstado()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00111">keypad</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00336">lcdEscribir()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00491">leerMic()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00362">limpiarSalidas()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00185">MIC_EVENTOS_ALARMA</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00184">MIC_LECTURAS_EVENTO</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00186">MIC_TICKS_SILENCIO</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00187">MIC_TICKS_VENTANA</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00147">PASO_MS</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00501">puertaAb()</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00172">UMBRAL_MIC</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00711">setup()</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 5 --></div>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 6 --></div>
+</div>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Documentación de variables</h2>
+<a id="ga629b7df510f29c79d5c03966717018a7" name="ga629b7df510f29c79d5c03966717018a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga629b7df510f29c79d5c03966717018a7">&#9670;&#160;</a></span>hAmbiental</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TaskHandle_t hAmbiental = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Handle de la tarea de monitoreo ambiental (<a class="el" href="#ga68f0ae52239a006625901567e8dfe5a5" title="TaskAmbiental">TaskAmbiental</a>). </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00280">280</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00553">irAEstado()</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00711">setup()</a>.</p>
+
+</div>
+</div>
+<a id="ga2813fede67f8c3415ab1f1c6362bb1c5" name="ga2813fede67f8c3415ab1f1c6362bb1c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2813fede67f8c3415ab1f1c6362bb1c5">&#9670;&#160;</a></span>hIntrusos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TaskHandle_t hIntrusos = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Handle de la tarea de monitoreo de intrusos (<a class="el" href="#ga9603b1c503abd2bd6f6e355fed914150" title="TaskIntrusos">TaskIntrusos</a>). </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00283">283</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00553">irAEstado()</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00711">setup()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

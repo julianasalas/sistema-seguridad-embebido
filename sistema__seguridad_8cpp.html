@@ -1,0 +1,647 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sistema de Seguridad Embebido: Referencia del archivo sistema_seguridad.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Sistema de Seguridad Embebido<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Control de acceso y monitoreo ambiental con FreeRTOS en Arduino Mega</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('sistema__seguridad_8cpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referencia del archivo sistema_seguridad.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;Arduino_FreeRTOS.h&gt;</code><br />
+<code>#include &lt;Keypad.h&gt;</code><br />
+<code>#include &lt;LiquidCrystal.h&gt;</code><br />
+<code>#include &lt;Servo.h&gt;</code><br />
+<code>#include &lt;SPI.h&gt;</code><br />
+<code>#include &lt;MFRC522.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependencias incluidas en sistema_seguridad.cpp:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 --></div>
+</div>
+</div>
+<p><a href="sistema__seguridad_8cpp_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+defines</h2></td></tr>
+<tr id="define-members-0" class="groupHeader"><td colspan="2"><div class="groupHeader">Pines de entrada/salida</div></td></tr>
+<tr class="memitem:ga145103118f6d9d1129aa4509cf214a13" id="r_ga145103118f6d9d1129aa4509cf214a13"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#ga145103118f6d9d1129aa4509cf214a13">BUZZER</a>&#160;&#160;&#160;7</td></tr>
+<tr class="memdesc:ga145103118f6d9d1129aa4509cf214a13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin digital del buzzer pasivo.  <br /></td></tr>
+<tr class="memitem:gaa023481d2f7313e7029f4502afb8ea8d" id="r_gaa023481d2f7313e7029f4502afb8ea8d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#gaa023481d2f7313e7029f4502afb8ea8d">LED_VERDE</a>&#160;&#160;&#160;6</td></tr>
+<tr class="memdesc:gaa023481d2f7313e7029f4502afb8ea8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin del LED verde (acceso permitido).  <br /></td></tr>
+<tr class="memitem:ga7885f8a39915e51a832bd4d49a003a97" id="r_ga7885f8a39915e51a832bd4d49a003a97"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#ga7885f8a39915e51a832bd4d49a003a97">LED_ROJO</a>&#160;&#160;&#160;13</td></tr>
+<tr class="memdesc:ga7885f8a39915e51a832bd4d49a003a97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin del LED rojo (alarma / bloqueo).  <br /></td></tr>
+<tr class="memitem:ga683a2f1ac846d9e7c7f68fd29130ee1a" id="r_ga683a2f1ac846d9e7c7f68fd29130ee1a"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#ga683a2f1ac846d9e7c7f68fd29130ee1a">PIN_SERVO</a>&#160;&#160;&#160;10</td></tr>
+<tr class="memdesc:ga683a2f1ac846d9e7c7f68fd29130ee1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin PWM del servo-motor (cerradura).  <br /></td></tr>
+<tr class="memitem:ga9c471eeb260dd64a0bbb53bf3d54136a" id="r_ga9c471eeb260dd64a0bbb53bf3d54136a"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#ga9c471eeb260dd64a0bbb53bf3d54136a">PIN_BOTON</a>&#160;&#160;&#160;8</td></tr>
+<tr class="memdesc:ga9c471eeb260dd64a0bbb53bf3d54136a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin del botón de desbloqueo de emergencia (INPUT_PULLUP).  <br /></td></tr>
+<tr class="memitem:ga9c80d45f4c5f9729887dcd301a26a342" id="r_ga9c80d45f4c5f9729887dcd301a26a342"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#ga9c80d45f4c5f9729887dcd301a26a342">PIN_HALL</a>&#160;&#160;&#160;A1</td></tr>
+<tr class="memdesc:ga9c80d45f4c5f9729887dcd301a26a342"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin analógico sensor Hall KY-035.  <br /></td></tr>
+<tr class="memitem:ga355ecb7b234a50fc7a4d31ba26c4184b" id="r_ga355ecb7b234a50fc7a4d31ba26c4184b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#ga355ecb7b234a50fc7a4d31ba26c4184b">PIN_MIC</a>&#160;&#160;&#160;A2</td></tr>
+<tr class="memdesc:ga355ecb7b234a50fc7a4d31ba26c4184b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin analógico sensor micrófono KY-037.  <br /></td></tr>
+<tr class="memitem:ga65292d0ee3521543804b71d6726f162d" id="r_ga65292d0ee3521543804b71d6726f162d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#ga65292d0ee3521543804b71d6726f162d">PIN_TEMP</a>&#160;&#160;&#160;A3</td></tr>
+<tr class="memdesc:ga65292d0ee3521543804b71d6726f162d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin analógico sensor temperatura KY-013.  <br /></td></tr>
+<tr class="memitem:ga456010749e02571badfd3c3741165fd8" id="r_ga456010749e02571badfd3c3741165fd8"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#ga456010749e02571badfd3c3741165fd8">PIN_LUZ</a>&#160;&#160;&#160;A4</td></tr>
+<tr class="memdesc:ga456010749e02571badfd3c3741165fd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin analógico sensor luz KY-018.  <br /></td></tr>
+<tr class="memitem:ga86fac98c9b4c98a3e50fc45440878391" id="r_ga86fac98c9b4c98a3e50fc45440878391"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#ga86fac98c9b4c98a3e50fc45440878391">SS_PIN</a>&#160;&#160;&#160;53</td></tr>
+<tr class="memdesc:ga86fac98c9b4c98a3e50fc45440878391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin SPI Slave Select del MFRC522.  <br /></td></tr>
+<tr class="memitem:ga36932b0e869e0114f32e255f61306d6b" id="r_ga36932b0e869e0114f32e255f61306d6b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#ga36932b0e869e0114f32e255f61306d6b">RST_PIN</a>&#160;&#160;&#160;9</td></tr>
+<tr class="memdesc:ga36932b0e869e0114f32e255f61306d6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin de reset del MFRC522.  <br /></td></tr>
+<tr id="define-members-1" class="groupHeader"><td colspan="2"><div class="groupHeader">Temporización (1 tick = PASO_MS = 100 ms)</div></td></tr>
+<tr class="memitem:ga2855646e72b7f7e4051eb5b2bd911dbc" id="r_ga2855646e72b7f7e4051eb5b2bd911dbc"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#ga2855646e72b7f7e4051eb5b2bd911dbc">PASO_MS</a>&#160;&#160;&#160;100</td></tr>
+<tr class="memdesc:ga2855646e72b7f7e4051eb5b2bd911dbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duración de cada tick de control en ms.  <br /></td></tr>
+<tr class="memitem:ga360d7a70aedc974c64f66eee84f744a7" id="r_ga360d7a70aedc974c64f66eee84f744a7"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#ga360d7a70aedc974c64f66eee84f744a7">CICLOS_AMBIENTAL</a>&#160;&#160;&#160;50</td></tr>
+<tr class="memdesc:ga360d7a70aedc974c64f66eee84f744a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duración del modo ambiental en ticks (5 s).  <br /></td></tr>
+<tr class="memitem:gaba36eab096ee0a1261387fd3a709c946" id="r_gaba36eab096ee0a1261387fd3a709c946"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#gaba36eab096ee0a1261387fd3a709c946">CICLOS_INTRUSOS</a>&#160;&#160;&#160;20</td></tr>
+<tr class="memdesc:gaba36eab096ee0a1261387fd3a709c946"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duración del modo intrusos en ticks (2 s).  <br /></td></tr>
+<tr class="memitem:ga3a92bd2695be33804aee70b537d75e8d" id="r_ga3a92bd2695be33804aee70b537d75e8d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#ga3a92bd2695be33804aee70b537d75e8d">TICKS_ALARMA</a>&#160;&#160;&#160;20</td></tr>
+<tr class="memdesc:ga3a92bd2695be33804aee70b537d75e8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duración de la alarma en ticks (2 s).  <br /></td></tr>
+<tr class="memitem:gae75f2e171b1b8eb0aad3447545731719" id="r_gae75f2e171b1b8eb0aad3447545731719"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#gae75f2e171b1b8eb0aad3447545731719">TICKS_VENTANA</a>&#160;&#160;&#160;120</td></tr>
+<tr class="memdesc:gae75f2e171b1b8eb0aad3447545731719"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ventana de alarmas consecutivas en ticks (12 s).  <br /></td></tr>
+<tr class="memitem:gaaebb3efeb5b24e9227e92aacec9b7536" id="r_gaaebb3efeb5b24e9227e92aacec9b7536"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#gaaebb3efeb5b24e9227e92aacec9b7536">TICKS_PUERTA</a>&#160;&#160;&#160;50</td></tr>
+<tr class="memdesc:gaaebb3efeb5b24e9227e92aacec9b7536"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tiempo de puerta abierta en ticks (5 s).  <br /></td></tr>
+<tr class="memitem:gabed0966407c31b28668ba8daca40a91a" id="r_gabed0966407c31b28668ba8daca40a91a"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#gabed0966407c31b28668ba8daca40a91a">TICKS_MSG_ERROR</a>&#160;&#160;&#160;15</td></tr>
+<tr class="memdesc:gabed0966407c31b28668ba8daca40a91a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duración del mensaje de error en ticks (1.5 s).  <br /></td></tr>
+<tr class="memitem:gabd4bea995bfb36973c65c611f2aad62b" id="r_gabd4bea995bfb36973c65c611f2aad62b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#gabd4bea995bfb36973c65c611f2aad62b">TICKS_DEBOUNCE_BTN</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:gabd4bea995bfb36973c65c611f2aad62b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Anti-rebote del botón en ticks (100 ms).  <br /></td></tr>
+<tr id="define-members-2" class="groupHeader"><td colspan="2"><div class="groupHeader">Parpadeo de LEDs</div></td></tr>
+<tr class="memitem:ga866b441576fb29616f923b5046e6358e" id="r_ga866b441576fb29616f923b5046e6358e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#ga866b441576fb29616f923b5046e6358e">TICKS_PARP_ON</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:ga866b441576fb29616f923b5046e6358e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ticks encendido en ALARMA (100 ms).  <br /></td></tr>
+<tr class="memitem:ga67beb9c1dec745d7bbe6748851a7f997" id="r_ga67beb9c1dec745d7bbe6748851a7f997"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#ga67beb9c1dec745d7bbe6748851a7f997">TICKS_PARP_OFF</a>&#160;&#160;&#160;5</td></tr>
+<tr class="memdesc:ga67beb9c1dec745d7bbe6748851a7f997"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ticks apagado en ALARMA (500 ms).  <br /></td></tr>
+<tr class="memitem:ga0934f5d63d0bf48ea639eec42c3e84d2" id="r_ga0934f5d63d0bf48ea639eec42c3e84d2"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#ga0934f5d63d0bf48ea639eec42c3e84d2">TICKS_PARP_BLQ_ON</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memdesc:ga0934f5d63d0bf48ea639eec42c3e84d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ticks encendido en BLOQUEO (300 ms).  <br /></td></tr>
+<tr class="memitem:ga1080b83ad31fa8ce57c473fbe6b05dcf" id="r_ga1080b83ad31fa8ce57c473fbe6b05dcf"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#ga1080b83ad31fa8ce57c473fbe6b05dcf">TICKS_PARP_BLQ_OFF</a>&#160;&#160;&#160;7</td></tr>
+<tr class="memdesc:ga1080b83ad31fa8ce57c473fbe6b05dcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ticks apagado en BLOQUEO (700 ms).  <br /></td></tr>
+<tr id="define-members-3" class="groupHeader"><td colspan="2"><div class="groupHeader">Umbrales de sensores</div></td></tr>
+<tr class="memitem:ga532ab754224e2d897d84f4b61abbb604" id="r_ga532ab754224e2d897d84f4b61abbb604"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#ga532ab754224e2d897d84f4b61abbb604">UMBRAL_LUZ</a>&#160;&#160;&#160;100</td></tr>
+<tr class="memdesc:ga532ab754224e2d897d84f4b61abbb604"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADC mínimo KY-018; por debajo = oscuridad.  <br /></td></tr>
+<tr class="memitem:ga8fbc642c0d13d6b00405d24660bed982" id="r_ga8fbc642c0d13d6b00405d24660bed982"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#ga8fbc642c0d13d6b00405d24660bed982">UMBRAL_MIC</a>&#160;&#160;&#160;600</td></tr>
+<tr class="memdesc:ga8fbc642c0d13d6b00405d24660bed982"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADC mínimo KY-037; por encima = ruido.  <br /></td></tr>
+<tr class="memitem:ga50e08cfe2fa436c80e0a9f4f9dba3169" id="r_ga50e08cfe2fa436c80e0a9f4f9dba3169"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#ga50e08cfe2fa436c80e0a9f4f9dba3169">HALL_REPOSO</a>&#160;&#160;&#160;512</td></tr>
+<tr class="memdesc:ga50e08cfe2fa436c80e0a9f4f9dba3169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valor de reposo del KY-035 (~Vcc/2).  <br /></td></tr>
+<tr class="memitem:ga4d570f8c01436f140ed43e910174e4d3" id="r_ga4d570f8c01436f140ed43e910174e4d3"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#ga4d570f8c01436f140ed43e910174e4d3">HALL_MARGEN</a>&#160;&#160;&#160;40</td></tr>
+<tr class="memdesc:ga4d570f8c01436f140ed43e910174e4d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Desviación mínima del Hall para detección.  <br /></td></tr>
+<tr class="memitem:ga75f7a864e4a04089bdb5f6b57c55105e" id="r_ga75f7a864e4a04089bdb5f6b57c55105e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#ga75f7a864e4a04089bdb5f6b57c55105e">UMBRAL_TEMP</a>&#160;&#160;&#160;20</td></tr>
+<tr class="memdesc:ga75f7a864e4a04089bdb5f6b57c55105e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temperatura mínima en °C antes de alarma.  <br /></td></tr>
+<tr class="memitem:ga9012c823047a9783e49268794658cfd7" id="r_ga9012c823047a9783e49268794658cfd7"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#ga9012c823047a9783e49268794658cfd7">TERM_R1</a>&#160;&#160;&#160;10000.0</td></tr>
+<tr class="memdesc:ga9012c823047a9783e49268794658cfd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resistencia de referencia KY-013 (10 kΩ).  <br /></td></tr>
+<tr class="memitem:gae10a6d060ce1458df07cb532acf3744f" id="r_gae10a6d060ce1458df07cb532acf3744f"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#gae10a6d060ce1458df07cb532acf3744f">MAX_ALARMAS</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memdesc:gae10a6d060ce1458df07cb532acf3744f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alarmas consecutivas para pasar a BLOQUEO.  <br /></td></tr>
+<tr id="define-members-4" class="groupHeader"><td colspan="2"><div class="groupHeader">Parámetros del detector de ruido (micrófono)</div></td></tr>
+<tr class="memitem:ga5a23a12625b136b9500d3e24c4d926fd" id="r_ga5a23a12625b136b9500d3e24c4d926fd"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#ga5a23a12625b136b9500d3e24c4d926fd">MIC_LECTURAS_EVENTO</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memdesc:ga5a23a12625b136b9500d3e24c4d926fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ticks con ruido para confirmar un evento (300 ms).  <br /></td></tr>
+<tr class="memitem:ga36424988dbbeab73a594beab733f6517" id="r_ga36424988dbbeab73a594beab733f6517"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#ga36424988dbbeab73a594beab733f6517">MIC_EVENTOS_ALARMA</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memdesc:ga36424988dbbeab73a594beab733f6517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Eventos confirmados que disparan alarma.  <br /></td></tr>
+<tr class="memitem:gacd24138ed8c4938ffa2c2d6de7478197" id="r_gacd24138ed8c4938ffa2c2d6de7478197"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#gacd24138ed8c4938ffa2c2d6de7478197">MIC_TICKS_SILENCIO</a>&#160;&#160;&#160;5</td></tr>
+<tr class="memdesc:gacd24138ed8c4938ffa2c2d6de7478197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ticks sin ruido para cerrar un evento (500 ms).  <br /></td></tr>
+<tr class="memitem:ga92f323020fc7b609b5577519356ccf72" id="r_ga92f323020fc7b609b5577519356ccf72"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="group__config.html#ga92f323020fc7b609b5577519356ccf72">MIC_TICKS_VENTANA</a>&#160;&#160;&#160;150</td></tr>
+<tr class="memdesc:ga92f323020fc7b609b5577519356ccf72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ticks sin evento para olvidar acumulados (15 s).  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumeraciones</h2></td></tr>
+<tr class="memitem:ga9d4630b1e0c310d9b8c562abd8114c49" id="r_ga9d4630b1e0c310d9b8c562abd8114c49"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="group__fsm.html#ga9d4630b1e0c310d9b8c562abd8114c49">Estado</a> { <br />
+&#160;&#160;<a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49a402b58fc7dd38c6fcedd7d16f23fdf7f">EST_INICIO</a>
+, <a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49a80bb0208316f1fdcd3471dd7e2d52a7e">EST_ABRIENDO</a>
+, <a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49a2cf6b904b4aff14aee7d767b64cddc14">EST_CONFIG</a>
+, <a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49af6fa1413339495794c8d2da8b8445492">EST_MONITOR_INTRUSOS</a>
+, <br />
+&#160;&#160;<a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49a744ac1522119070468c5ae0610e93ea7">EST_MONITOR_AMBIENTAL</a>
+, <a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49aff9a0e91df1a6b47624989460c83d877">EST_ALARMA</a>
+, <a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49ac5bf8ef4f8992e6442d1561cd35b0144">EST_BLOQUEO</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:ga9d4630b1e0c310d9b8c562abd8114c49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estados de la Máquina de Estados Finita del sistema.  <a href="group__fsm.html#ga9d4630b1e0c310d9b8c562abd8114c49">Más...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:gaf97afdf00af0e116e9b5957f6a470fc2" id="r_gaf97afdf00af0e116e9b5957f6a470fc2"><td class="memItemLeft">LiquidCrystal&#160;</td><td class="memItemRight"><a class="el" href="group__hardware.html#gaf97afdf00af0e116e9b5957f6a470fc2">lcd</a> (12, 11, 5, 4, 3, 2)</td></tr>
+<tr class="memdesc:gaf97afdf00af0e116e9b5957f6a470fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Objeto LCD de 16×2. Pines: RS=12, EN=11, D4=5, D5=4, D6=3, D7=2.  <br /></td></tr>
+<tr class="memitem:ga3dfc78456f71b1381f9c7021a01efc95" id="r_ga3dfc78456f71b1381f9c7021a01efc95"><td class="memItemLeft">MFRC522&#160;</td><td class="memItemRight"><a class="el" href="group__hardware.html#ga3dfc78456f71b1381f9c7021a01efc95">rfid</a> (53, 9)</td></tr>
+<tr class="memdesc:ga3dfc78456f71b1381f9c7021a01efc95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Objeto lector RFID MFRC522.  <br /></td></tr>
+<tr class="memitem:gabf2ea295dd40f5ef9c4104310ad3d0d7" id="r_gabf2ea295dd40f5ef9c4104310ad3d0d7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__tareas.html#gabf2ea295dd40f5ef9c4104310ad3d0d7">TaskControl</a> (void *pv)</td></tr>
+<tr class="memdesc:gabf2ea295dd40f5ef9c4104310ad3d0d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tarea FreeRTOS principal: ciclo de despacho de la FSM.  <br /></td></tr>
+<tr class="memitem:ga68f0ae52239a006625901567e8dfe5a5" id="r_ga68f0ae52239a006625901567e8dfe5a5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__tareas.html#ga68f0ae52239a006625901567e8dfe5a5">TaskAmbiental</a> (void *pv)</td></tr>
+<tr class="memdesc:ga68f0ae52239a006625901567e8dfe5a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tarea FreeRTOS de monitoreo ambiental (temperatura y luz).  <br /></td></tr>
+<tr class="memitem:ga9603b1c503abd2bd6f6e355fed914150" id="r_ga9603b1c503abd2bd6f6e355fed914150"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__tareas.html#ga9603b1c503abd2bd6f6e355fed914150">TaskIntrusos</a> (void *pv)</td></tr>
+<tr class="memdesc:ga9603b1c503abd2bd6f6e355fed914150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tarea FreeRTOS de monitoreo de intrusos.  <br /></td></tr>
+<tr class="memitem:gafb90bcd3aa03635c0f7b49cec80f634e" id="r_gafb90bcd3aa03635c0f7b49cec80f634e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__fsm.html#gafb90bcd3aa03635c0f7b49cec80f634e">manejarInicio</a> ()</td></tr>
+<tr class="memdesc:gafb90bcd3aa03635c0f7b49cec80f634e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manejador del estado <span class="tt"><a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49a402b58fc7dd38c6fcedd7d16f23fdf7f">EST_INICIO</a></span>.  <br /></td></tr>
+<tr class="memitem:ga5f7a9dcc2a087a1d7d9813cb5b7ce098" id="r_ga5f7a9dcc2a087a1d7d9813cb5b7ce098"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__fsm.html#ga5f7a9dcc2a087a1d7d9813cb5b7ce098">manejarAbriendo</a> ()</td></tr>
+<tr class="memdesc:ga5f7a9dcc2a087a1d7d9813cb5b7ce098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manejador del estado <span class="tt"><a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49a80bb0208316f1fdcd3471dd7e2d52a7e">EST_ABRIENDO</a></span>.  <br /></td></tr>
+<tr class="memitem:ga5ab2ebd90930ec670038414547bf3a55" id="r_ga5ab2ebd90930ec670038414547bf3a55"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__fsm.html#ga5ab2ebd90930ec670038414547bf3a55">manejarConfig</a> ()</td></tr>
+<tr class="memdesc:ga5ab2ebd90930ec670038414547bf3a55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manejador del estado <span class="tt"><a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49a2cf6b904b4aff14aee7d767b64cddc14">EST_CONFIG</a></span>.  <br /></td></tr>
+<tr class="memitem:gac808aafeb5903e9b330785699ccb0a6c" id="r_gac808aafeb5903e9b330785699ccb0a6c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__fsm.html#gac808aafeb5903e9b330785699ccb0a6c">manejarAlarma</a> ()</td></tr>
+<tr class="memdesc:gac808aafeb5903e9b330785699ccb0a6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manejador del estado <span class="tt"><a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49aff9a0e91df1a6b47624989460c83d877">EST_ALARMA</a></span>.  <br /></td></tr>
+<tr class="memitem:ga2d0a3d09291c6fdbf9bcf10a2c682083" id="r_ga2d0a3d09291c6fdbf9bcf10a2c682083"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__fsm.html#ga2d0a3d09291c6fdbf9bcf10a2c682083">manejarBloqueo</a> ()</td></tr>
+<tr class="memdesc:ga2d0a3d09291c6fdbf9bcf10a2c682083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manejador del estado <span class="tt"><a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49ac5bf8ef4f8992e6442d1561cd35b0144">EST_BLOQUEO</a></span>.  <br /></td></tr>
+<tr class="memitem:gaee03cd25b71f09567dcf074ff59c8046" id="r_gaee03cd25b71f09567dcf074ff59c8046"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__fsm.html#gaee03cd25b71f09567dcf074ff59c8046">irAEstado</a> (<a class="el" href="group__fsm.html#ga9d4630b1e0c310d9b8c562abd8114c49">Estado</a> nuevo)</td></tr>
+<tr class="memdesc:gaee03cd25b71f09567dcf074ff59c8046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ejecuta la transición de la FSM al estado indicado.  <br /></td></tr>
+<tr class="memitem:gae74e123e4c1ff81ee9a0c8f4085410fb" id="r_gae74e123e4c1ff81ee9a0c8f4085410fb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__fsm.html#gae74e123e4c1ff81ee9a0c8f4085410fb">activarAlarma</a> (String razon, <a class="el" href="group__fsm.html#ga9d4630b1e0c310d9b8c562abd8114c49">Estado</a> origen)</td></tr>
+<tr class="memdesc:gae74e123e4c1ff81ee9a0c8f4085410fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registra y activa una alarma del sistema.  <br /></td></tr>
+<tr class="memitem:gada75dfc0a4a2cbd90fb6b3f8228b2590" id="r_gada75dfc0a4a2cbd90fb6b3f8228b2590"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__hardware.html#gada75dfc0a4a2cbd90fb6b3f8228b2590">verificarRFID</a> ()</td></tr>
+<tr class="memdesc:gada75dfc0a4a2cbd90fb6b3f8228b2590"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lee una tarjeta RFID y autoriza o deniega el acceso.  <br /></td></tr>
+<tr class="memitem:gaac7b29dc45caaaca67299571f6a2dcc0" id="r_gaac7b29dc45caaaca67299571f6a2dcc0"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="group__hardware.html#gaac7b29dc45caaaca67299571f6a2dcc0">freeRam</a> ()</td></tr>
+<tr class="memdesc:gaac7b29dc45caaaca67299571f6a2dcc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna los bytes libres en el heap de RAM.  <br /></td></tr>
+<tr class="memitem:ga9f11914e61e4c2bf68e9b8cc91db5628" id="r_ga9f11914e61e4c2bf68e9b8cc91db5628"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__hardware.html#ga9f11914e61e4c2bf68e9b8cc91db5628">lcdEscribir</a> (String l1, String l2)</td></tr>
+<tr class="memdesc:ga9f11914e61e4c2bf68e9b8cc91db5628"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escribe dos líneas de texto en el LCD 16×2.  <br /></td></tr>
+<tr class="memitem:ga2a424a53e71040ea1a466f4d0adf0b6a" id="r_ga2a424a53e71040ea1a466f4d0adf0b6a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__actuadores.html#ga2a424a53e71040ea1a466f4d0adf0b6a">limpiarSalidas</a> ()</td></tr>
+<tr class="memdesc:ga2a424a53e71040ea1a466f4d0adf0b6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apaga todos los actuadores de señalización.  <br /></td></tr>
+<tr class="memitem:gae1fd3f671724f825c66f4c23af9fd268" id="r_gae1fd3f671724f825c66f4c23af9fd268"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__actuadores.html#gae1fd3f671724f825c66f4c23af9fd268">abrirPuerta</a> ()</td></tr>
+<tr class="memdesc:gae1fd3f671724f825c66f4c23af9fd268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abre la puerta girando el servo a 90°.  <br /></td></tr>
+<tr class="memitem:gaed4c8c6afaab193de8058bd95a226644" id="r_gaed4c8c6afaab193de8058bd95a226644"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="group__actuadores.html#gaed4c8c6afaab193de8058bd95a226644">cerrarPuerta</a> ()</td></tr>
+<tr class="memdesc:gaed4c8c6afaab193de8058bd95a226644"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cierra la puerta girando el servo a 0°.  <br /></td></tr>
+<tr class="memitem:ga9040ae03ed89ee4cdb3e20193ae912b9" id="r_ga9040ae03ed89ee4cdb3e20193ae912b9"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="group__actuadores.html#ga9040ae03ed89ee4cdb3e20193ae912b9">botonPresionado</a> ()</td></tr>
+<tr class="memdesc:ga9040ae03ed89ee4cdb3e20193ae912b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detecta la pulsación del botón físico con anti-rebote por ticks.  <br /></td></tr>
+<tr class="memitem:gab96dd9550872ccc75be0a22d78a79863" id="r_gab96dd9550872ccc75be0a22d78a79863"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="group__sensores.html#gab96dd9550872ccc75be0a22d78a79863">leerTemp</a> ()</td></tr>
+<tr class="memdesc:gab96dd9550872ccc75be0a22d78a79863"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lee la temperatura con el termistor NTC del KY-013.  <br /></td></tr>
+<tr class="memitem:ga29e92705724ea23b5b79bc544e335cc2" id="r_ga29e92705724ea23b5b79bc544e335cc2"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="group__sensores.html#ga29e92705724ea23b5b79bc544e335cc2">leerLuz</a> ()</td></tr>
+<tr class="memdesc:ga29e92705724ea23b5b79bc544e335cc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lee el nivel de iluminación con el KY-018 (LDR).  <br /></td></tr>
+<tr class="memitem:ga977c1be0b0a923cefb4fc18c85f77ae1" id="r_ga977c1be0b0a923cefb4fc18c85f77ae1"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="group__sensores.html#ga977c1be0b0a923cefb4fc18c85f77ae1">leerMic</a> ()</td></tr>
+<tr class="memdesc:ga977c1be0b0a923cefb4fc18c85f77ae1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lee el nivel de ruido con el KY-037 (micrófono).  <br /></td></tr>
+<tr class="memitem:ga1073cc7ee88838657a31f2166d08373e" id="r_ga1073cc7ee88838657a31f2166d08373e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="group__sensores.html#ga1073cc7ee88838657a31f2166d08373e">puertaAb</a> ()</td></tr>
+<tr class="memdesc:ga1073cc7ee88838657a31f2166d08373e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consulta el estado lógico de la puerta.  <br /></td></tr>
+<tr class="memitem:ga3d2ab528c2b581372c8e78a8ed8d0456" id="r_ga3d2ab528c2b581372c8e78a8ed8d0456"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="group__sensores.html#ga3d2ab528c2b581372c8e78a8ed8d0456">hallDet</a> ()</td></tr>
+<tr class="memdesc:ga3d2ab528c2b581372c8e78a8ed8d0456"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detecta campo magnético con el sensor Hall KY-035.  <br /></td></tr>
+<tr class="memitem:a4fc01d736fe50cf5b977f755b675f11d" id="r_a4fc01d736fe50cf5b977f755b675f11d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4fc01d736fe50cf5b977f755b675f11d">setup</a> ()</td></tr>
+<tr class="memdesc:a4fc01d736fe50cf5b977f755b675f11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicialización del sistema.  <br /></td></tr>
+<tr class="memitem:afe461d27b9c48d5921c00d521181f12f" id="r_afe461d27b9c48d5921c00d521181f12f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afe461d27b9c48d5921c00d521181f12f">loop</a> ()</td></tr>
+<tr class="memdesc:afe461d27b9c48d5921c00d521181f12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función loop vacía; el scheduler de FreeRTOS toma el control tras <span class="tt"><a class="el" href="#a4fc01d736fe50cf5b977f755b675f11d" title="Inicialización del sistema.">setup()</a></span>.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga829655a147df70dd4cc94eae40a2204e" id="r_ga829655a147df70dd4cc94eae40a2204e"><td class="memItemLeft">const byte&#160;</td><td class="memItemRight"><a class="el" href="group__hardware.html#ga829655a147df70dd4cc94eae40a2204e">ROWS</a> = 4</td></tr>
+<tr class="memdesc:ga829655a147df70dd4cc94eae40a2204e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Número de filas del teclado matricial.  <br /></td></tr>
+<tr class="memitem:gaefd90f1160eaa105bc910d4d7c46b815" id="r_gaefd90f1160eaa105bc910d4d7c46b815"><td class="memItemLeft">const byte&#160;</td><td class="memItemRight"><a class="el" href="group__hardware.html#gaefd90f1160eaa105bc910d4d7c46b815">COLS</a> = 4</td></tr>
+<tr class="memdesc:gaefd90f1160eaa105bc910d4d7c46b815"><td class="mdescLeft">&#160;</td><td class="mdescRight">Número de columnas del teclado matricial.  <br /></td></tr>
+<tr class="memitem:ga856e873a1d14012d57ddb813c4a1e40a" id="r_ga856e873a1d14012d57ddb813c4a1e40a"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="group__hardware.html#ga856e873a1d14012d57ddb813c4a1e40a">keys</a> [<a class="el" href="group__hardware.html#ga829655a147df70dd4cc94eae40a2204e">ROWS</a>][<a class="el" href="group__hardware.html#gaefd90f1160eaa105bc910d4d7c46b815">COLS</a>]</td></tr>
+<tr class="memdesc:ga856e873a1d14012d57ddb813c4a1e40a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mapa de caracteres del teclado matricial 4×4.  <br /></td></tr>
+<tr class="memitem:ga6d6753e0ae098b31e2f84d4024e361cf" id="r_ga6d6753e0ae098b31e2f84d4024e361cf"><td class="memItemLeft">byte&#160;</td><td class="memItemRight"><a class="el" href="group__hardware.html#ga6d6753e0ae098b31e2f84d4024e361cf">rowPins</a> [<a class="el" href="group__hardware.html#ga829655a147df70dd4cc94eae40a2204e">ROWS</a>] = {33, 35, 37, 39}</td></tr>
+<tr class="memdesc:ga6d6753e0ae098b31e2f84d4024e361cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pines de Arduino conectados a las filas del teclado.  <br /></td></tr>
+<tr class="memitem:gaa9fece7b062124080e4b2976f9a8b675" id="r_gaa9fece7b062124080e4b2976f9a8b675"><td class="memItemLeft">byte&#160;</td><td class="memItemRight"><a class="el" href="group__hardware.html#gaa9fece7b062124080e4b2976f9a8b675">colPins</a> [<a class="el" href="group__hardware.html#gaefd90f1160eaa105bc910d4d7c46b815">COLS</a>] = {41, 43, 45, 47}</td></tr>
+<tr class="memdesc:gaa9fece7b062124080e4b2976f9a8b675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pines de Arduino conectados a las columnas del teclado.  <br /></td></tr>
+<tr class="memitem:ga0e6c3cc7e8c762ab0ca1fa2296d7bbfe" id="r_ga0e6c3cc7e8c762ab0ca1fa2296d7bbfe"><td class="memItemLeft">Keypad&#160;</td><td class="memItemRight"><a class="el" href="group__hardware.html#ga0e6c3cc7e8c762ab0ca1fa2296d7bbfe">keypad</a> = Keypad(makeKeymap(<a class="el" href="group__hardware.html#ga856e873a1d14012d57ddb813c4a1e40a">keys</a>), <a class="el" href="group__hardware.html#ga6d6753e0ae098b31e2f84d4024e361cf">rowPins</a>, <a class="el" href="group__hardware.html#gaa9fece7b062124080e4b2976f9a8b675">colPins</a>, <a class="el" href="group__hardware.html#ga829655a147df70dd4cc94eae40a2204e">ROWS</a>, <a class="el" href="group__hardware.html#gaefd90f1160eaa105bc910d4d7c46b815">COLS</a>)</td></tr>
+<tr class="memdesc:ga0e6c3cc7e8c762ab0ca1fa2296d7bbfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Objeto teclado matricial.  <br /></td></tr>
+<tr class="memitem:gab6b14da16e523e0e75bd2647d88a6b77" id="r_gab6b14da16e523e0e75bd2647d88a6b77"><td class="memItemLeft">Servo&#160;</td><td class="memItemRight"><a class="el" href="group__hardware.html#gab6b14da16e523e0e75bd2647d88a6b77">puertaServo</a></td></tr>
+<tr class="memdesc:gab6b14da16e523e0e75bd2647d88a6b77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Servo-motor que actúa como cerradura electrónica.  <br /></td></tr>
+<tr class="memitem:gaeb43ab74e185f16eaf99a62afb798c50" id="r_gaeb43ab74e185f16eaf99a62afb798c50"><td class="memItemLeft">volatile <a class="el" href="group__fsm.html#ga9d4630b1e0c310d9b8c562abd8114c49">Estado</a>&#160;</td><td class="memItemRight"><a class="el" href="group__fsm.html#gaeb43ab74e185f16eaf99a62afb798c50">estadoActual</a> = <a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49a402b58fc7dd38c6fcedd7d16f23fdf7f">EST_INICIO</a></td></tr>
+<tr class="memdesc:gaeb43ab74e185f16eaf99a62afb798c50"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__fsm.html#ga9d4630b1e0c310d9b8c562abd8114c49" title="Estados de la Máquina de Estados Finita del sistema.">Estado</a> actual de la FSM. <span class="tt">volatile</span> porque lo modifican varias tareas.  <br /></td></tr>
+<tr class="memitem:gaa97bd97c70672aa6ae19a417802c50be" id="r_gaa97bd97c70672aa6ae19a417802c50be"><td class="memItemLeft"><a class="el" href="group__fsm.html#ga9d4630b1e0c310d9b8c562abd8114c49">Estado</a>&#160;</td><td class="memItemRight"><a class="el" href="group__fsm.html#gaa97bd97c70672aa6ae19a417802c50be">estadoAnterior</a> = <a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49a744ac1522119070468c5ae0610e93ea7">EST_MONITOR_AMBIENTAL</a></td></tr>
+<tr class="memdesc:gaa97bd97c70672aa6ae19a417802c50be"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__fsm.html#ga9d4630b1e0c310d9b8c562abd8114c49" title="Estados de la Máquina de Estados Finita del sistema.">Estado</a> al que se regresa al finalizar una alarma.  <br /></td></tr>
+<tr class="memitem:ga1a1cd87a804b8e9716361ecc4314a94a" id="r_ga1a1cd87a804b8e9716361ecc4314a94a"><td class="memItemLeft"><a class="el" href="group__fsm.html#ga9d4630b1e0c310d9b8c562abd8114c49">Estado</a>&#160;</td><td class="memItemRight"><a class="el" href="group__fsm.html#ga1a1cd87a804b8e9716361ecc4314a94a">estadoPost</a> = <a class="el" href="group__fsm.html#gga9d4630b1e0c310d9b8c562abd8114c49a744ac1522119070468c5ae0610e93ea7">EST_MONITOR_AMBIENTAL</a></td></tr>
+<tr class="memdesc:ga1a1cd87a804b8e9716361ecc4314a94a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__fsm.html#ga9d4630b1e0c310d9b8c562abd8114c49" title="Estados de la Máquina de Estados Finita del sistema.">Estado</a> destino al cerrar la puerta tras un acceso exitoso.  <br /></td></tr>
+<tr class="memitem:aa1a9ca5f84ae0b9bf451a46157393987" id="r_aa1a9ca5f84ae0b9bf451a46157393987"><td class="memItemLeft">String&#160;</td><td class="memItemRight"><a class="el" href="#aa1a9ca5f84ae0b9bf451a46157393987">textoClave</a> = &quot;&quot;</td></tr>
+<tr class="memdesc:aa1a9ca5f84ae0b9bf451a46157393987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dígitos acumulados desde el teclado durante el ingreso de clave.  <br /></td></tr>
+<tr class="memitem:a35c6d852422d51628a060ad8f323746e" id="r_a35c6d852422d51628a060ad8f323746e"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a35c6d852422d51628a060ad8f323746e">intentosFallidos</a> = 0</td></tr>
+<tr class="memdesc:a35c6d852422d51628a060ad8f323746e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intentos de acceso fallidos (clave o RFID). Se reinicia al desbloquear.  <br /></td></tr>
+<tr class="memitem:a18370e902de904f4c05140b7cc2983ab" id="r_a18370e902de904f4c05140b7cc2983ab"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a18370e902de904f4c05140b7cc2983ab">puertaAbiertaFlag</a> = false</td></tr>
+<tr class="memdesc:a18370e902de904f4c05140b7cc2983ab"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__fsm.html#ga9d4630b1e0c310d9b8c562abd8114c49" title="Estados de la Máquina de Estados Finita del sistema.">Estado</a> lógico de la puerta.  <br /></td></tr>
+<tr class="memitem:a64425f5904b81fd48c550f48fe204921" id="r_a64425f5904b81fd48c550f48fe204921"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a64425f5904b81fd48c550f48fe204921">ticsParpadeo</a> = 0</td></tr>
+<tr class="memdesc:a64425f5904b81fd48c550f48fe204921"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contador de ticks para parpadeo de LEDs en ALARMA y BLOQUEO.  <br /></td></tr>
+<tr class="memitem:a05ea27aa45fb64df20896a3643cc2fa3" id="r_a05ea27aa45fb64df20896a3643cc2fa3"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a05ea27aa45fb64df20896a3643cc2fa3">ledOn</a> = false</td></tr>
+<tr class="memdesc:a05ea27aa45fb64df20896a3643cc2fa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si el LED rojo está encendido en el ciclo de parpadeo.  <br /></td></tr>
+<tr class="memitem:a007dfe6a4f6a6215c1df9f11a7756635" id="r_a007dfe6a4f6a6215c1df9f11a7756635"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a007dfe6a4f6a6215c1df9f11a7756635">ticsAlarma</a> = 0</td></tr>
+<tr class="memdesc:a007dfe6a4f6a6215c1df9f11a7756635"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ticks transcurridos desde el inicio de la alarma activa.  <br /></td></tr>
+<tr class="memitem:aac44debae56a5ef3b652ac751b965c03" id="r_aac44debae56a5ef3b652ac751b965c03"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aac44debae56a5ef3b652ac751b965c03">ticsUltimaAlarma</a> = 0</td></tr>
+<tr class="memdesc:aac44debae56a5ef3b652ac751b965c03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tick global en que ocurrió la última alarma (para ventana consecutiva).  <br /></td></tr>
+<tr class="memitem:a92e738f84718829ffd591d91853dd9d2" id="r_a92e738f84718829ffd591d91853dd9d2"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a92e738f84718829ffd591d91853dd9d2">ticsGlobal</a> = 0</td></tr>
+<tr class="memdesc:a92e738f84718829ffd591d91853dd9d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contador global de ticks procesados por <a class="el" href="group__tareas.html#gabf2ea295dd40f5ef9c4104310ad3d0d7" title="TaskControl">TaskControl</a>.  <br /></td></tr>
+<tr class="memitem:aee6e22c3ab7c2b88778b595002fa92a4" id="r_aee6e22c3ab7c2b88778b595002fa92a4"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aee6e22c3ab7c2b88778b595002fa92a4">ticsPuerta</a> = 0</td></tr>
+<tr class="memdesc:aee6e22c3ab7c2b88778b595002fa92a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ticks desde que la puerta quedó abierta.  <br /></td></tr>
+<tr class="memitem:a566b8914e6793fc7297631c9abed625c" id="r_a566b8914e6793fc7297631c9abed625c"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a566b8914e6793fc7297631c9abed625c">alarmasConsec</a> = 0</td></tr>
+<tr class="memdesc:a566b8914e6793fc7297631c9abed625c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Número de alarmas consecutivas dentro de la ventana <span class="tt"><a class="el" href="group__config.html#gae75f2e171b1b8eb0aad3447545731719" title="Ventana de alarmas consecutivas en ticks (12 s).">TICKS_VENTANA</a></span>.  <br /></td></tr>
+<tr class="memitem:a059836547d754f90e668c476b9e49470" id="r_a059836547d754f90e668c476b9e49470"><td class="memItemLeft">String&#160;</td><td class="memItemRight"><a class="el" href="#a059836547d754f90e668c476b9e49470">razonAlarma</a> = &quot;&quot;</td></tr>
+<tr class="memdesc:a059836547d754f90e668c476b9e49470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cadena de 16 caracteres con la causa de la alarma activa.  <br /></td></tr>
+<tr class="memitem:ga629b7df510f29c79d5c03966717018a7" id="r_ga629b7df510f29c79d5c03966717018a7"><td class="memItemLeft">TaskHandle_t&#160;</td><td class="memItemRight"><a class="el" href="group__tareas.html#ga629b7df510f29c79d5c03966717018a7">hAmbiental</a> = NULL</td></tr>
+<tr class="memdesc:ga629b7df510f29c79d5c03966717018a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle de la tarea de monitoreo ambiental (<a class="el" href="group__tareas.html#ga68f0ae52239a006625901567e8dfe5a5" title="TaskAmbiental">TaskAmbiental</a>).  <br /></td></tr>
+<tr class="memitem:ga2813fede67f8c3415ab1f1c6362bb1c5" id="r_ga2813fede67f8c3415ab1f1c6362bb1c5"><td class="memItemLeft">TaskHandle_t&#160;</td><td class="memItemRight"><a class="el" href="group__tareas.html#ga2813fede67f8c3415ab1f1c6362bb1c5">hIntrusos</a> = NULL</td></tr>
+<tr class="memdesc:ga2813fede67f8c3415ab1f1c6362bb1c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle de la tarea de monitoreo de intrusos (<a class="el" href="group__tareas.html#ga9603b1c503abd2bd6f6e355fed914150" title="TaskIntrusos">TaskIntrusos</a>).  <br /></td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentación de funciones</h2>
+<a id="afe461d27b9c48d5921c00d521181f12f" name="afe461d27b9c48d5921c00d521181f12f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe461d27b9c48d5921c00d521181f12f">&#9670;&#160;</a></span>loop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loop </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Función loop vacía; el scheduler de FreeRTOS toma el control tras <span class="tt"><a class="el" href="#a4fc01d736fe50cf5b977f755b675f11d" title="Inicialización del sistema.">setup()</a></span>. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00744">744</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4fc01d736fe50cf5b977f755b675f11d" name="a4fc01d736fe50cf5b977f755b675f11d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fc01d736fe50cf5b977f755b675f11d">&#9670;&#160;</a></span>setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setup </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicialización del sistema. </p>
+<p>Secuencia de arranque: </p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
+Serie a 9600 bps, bus SPI y módulo RFID.</h1>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
+Pines de salida (buzzer, LEDs) y entrada (botón PULLUP).</h1>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
+Servo en posición cerrada (0°).</h1>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
+LCD con pantalla de splash.</h1>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md8"></a>
+Creación de las tres tareas FreeRTOS:</h1>
+<ul>
+<li><a class="el" href="group__tareas.html#gabf2ea295dd40f5ef9c4104310ad3d0d7" title="TaskControl">TaskControl</a> — stack 256 B, prioridad 1.</li>
+<li><a class="el" href="group__tareas.html#ga68f0ae52239a006625901567e8dfe5a5" title="TaskAmbiental">TaskAmbiental</a> — stack 256 B, prioridad 1, suspendida al inicio.</li>
+<li><a class="el" href="group__tareas.html#ga9603b1c503abd2bd6f6e355fed914150" title="TaskIntrusos">TaskIntrusos</a> — stack 256 B, prioridad 1, suspendida al inicio. </li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md9"></a>
+Diagnóstico de RAM antes y después de crear las tareas.</h1>
+<dl class="section user"><dt>Returns</dt><dd>Nothing. </dd></dl>
+<p>&lt;Pin digital del buzzer pasivo.</p>
+<p>&lt;Pin del LED verde (acceso permitido).</p>
+<p>&lt;Pin del LED rojo (alarma / bloqueo).</p>
+<p>&lt;Pin del botón de desbloqueo de emergencia (INPUT_PULLUP).</p>
+<p>&lt;Pin PWM del servo-motor (cerradura).</p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00711">711</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="sistema__seguridad_8cpp_source.html#l00130">BUZZER</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00317">freeRam()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00280">hAmbiental</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00283">hIntrusos</a>, <a class="el" href="group__hardware.html#gaf97afdf00af0e116e9b5957f6a470fc2">lcd()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00132">LED_ROJO</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00131">LED_VERDE</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00134">PIN_BOTON</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00133">PIN_SERVO</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00117">puertaServo</a>, <a class="el" href="group__hardware.html#ga3dfc78456f71b1381f9c7021a01efc95">rfid()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00818">TaskAmbiental()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00776">TaskControl()</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00876">TaskIntrusos()</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 1 --></div>
+</div>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Documentación de variables</h2>
+<a id="a566b8914e6793fc7297631c9abed625c" name="a566b8914e6793fc7297631c9abed625c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a566b8914e6793fc7297631c9abed625c">&#9670;&#160;</a></span>alarmasConsec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int alarmasConsec = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Número de alarmas consecutivas dentro de la ventana <span class="tt"><a class="el" href="group__config.html#gae75f2e171b1b8eb0aad3447545731719" title="Ventana de alarmas consecutivas en ticks (12 s).">TICKS_VENTANA</a></span>. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00269">269</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00619">activarAlarma()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l01038">manejarAlarma()</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l01069">manejarBloqueo()</a>.</p>
+
+</div>
+</div>
+<a id="a35c6d852422d51628a060ad8f323746e" name="a35c6d852422d51628a060ad8f323746e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35c6d852422d51628a060ad8f323746e">&#9670;&#160;</a></span>intentosFallidos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int intentosFallidos = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Intentos de acceso fallidos (clave o RFID). Se reinicia al desbloquear. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00241">241</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l01069">manejarBloqueo()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00963">manejarInicio()</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00657">verificarRFID()</a>.</p>
+
+</div>
+</div>
+<a id="a05ea27aa45fb64df20896a3643cc2fa3" name="a05ea27aa45fb64df20896a3643cc2fa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05ea27aa45fb64df20896a3643cc2fa3">&#9670;&#160;</a></span>ledOn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ledOn = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indica si el LED rojo está encendido en el ciclo de parpadeo. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00254">254</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00553">irAEstado()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00362">limpiarSalidas()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l01038">manejarAlarma()</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l01069">manejarBloqueo()</a>.</p>
+
+</div>
+</div>
+<a id="a18370e902de904f4c05140b7cc2983ab" name="a18370e902de904f4c05140b7cc2983ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18370e902de904f4c05140b7cc2983ab">&#9670;&#160;</a></span>puertaAbiertaFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool puertaAbiertaFlag = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="group__fsm.html#ga9d4630b1e0c310d9b8c562abd8114c49" title="Estados de la Máquina de Estados Finita del sistema.">Estado</a> lógico de la puerta. </p>
+<p><span class="tt">true</span> = servo en 90° (abierta); <span class="tt">false</span> = servo en 0° (cerrada). </p><dl class="section see"><dt>Ver también</dt><dd><a class="el" href="group__actuadores.html#gae1fd3f671724f825c66f4c23af9fd268" title="Abre la puerta girando el servo a 90°.">abrirPuerta()</a>, <a class="el" href="group__actuadores.html#gaed4c8c6afaab193de8058bd95a226644" title="Cierra la puerta girando el servo a 0°.">cerrarPuerta()</a>, <a class="el" href="group__sensores.html#ga1073cc7ee88838657a31f2166d08373e" title="Consulta el estado lógico de la puerta.">puertaAb()</a> </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00248">248</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00379">abrirPuerta()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00399">cerrarPuerta()</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00501">puertaAb()</a>.</p>
+
+</div>
+</div>
+<a id="a059836547d754f90e668c476b9e49470" name="a059836547d754f90e668c476b9e49470"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a059836547d754f90e668c476b9e49470">&#9670;&#160;</a></span>razonAlarma</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String razonAlarma = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cadena de 16 caracteres con la causa de la alarma activa. </p>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="group__fsm.html#gae74e123e4c1ff81ee9a0c8f4085410fb" title="Registra y activa una alarma del sistema.">activarAlarma()</a> </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00272">272</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00619">activarAlarma()</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00553">irAEstado()</a>.</p>
+
+</div>
+</div>
+<a id="aa1a9ca5f84ae0b9bf451a46157393987" name="aa1a9ca5f84ae0b9bf451a46157393987"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1a9ca5f84ae0b9bf451a46157393987">&#9670;&#160;</a></span>textoClave</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String textoClave = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dígitos acumulados desde el teclado durante el ingreso de clave. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00238">238</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00553">irAEstado()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l01069">manejarBloqueo()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l01137">manejarConfig()</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00963">manejarInicio()</a>.</p>
+
+</div>
+</div>
+<a id="a007dfe6a4f6a6215c1df9f11a7756635" name="a007dfe6a4f6a6215c1df9f11a7756635"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a007dfe6a4f6a6215c1df9f11a7756635">&#9670;&#160;</a></span>ticsAlarma</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ticsAlarma = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ticks transcurridos desde el inicio de la alarma activa. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00257">257</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00553">irAEstado()</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l01038">manejarAlarma()</a>.</p>
+
+</div>
+</div>
+<a id="a92e738f84718829ffd591d91853dd9d2" name="a92e738f84718829ffd591d91853dd9d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92e738f84718829ffd591d91853dd9d2">&#9670;&#160;</a></span>ticsGlobal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ticsGlobal = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Contador global de ticks procesados por <a class="el" href="group__tareas.html#gabf2ea295dd40f5ef9c4104310ad3d0d7" title="TaskControl">TaskControl</a>. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00263">263</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00619">activarAlarma()</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00776">TaskControl()</a>.</p>
+
+</div>
+</div>
+<a id="a64425f5904b81fd48c550f48fe204921" name="a64425f5904b81fd48c550f48fe204921"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64425f5904b81fd48c550f48fe204921">&#9670;&#160;</a></span>ticsParpadeo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ticsParpadeo = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Contador de ticks para parpadeo de LEDs en ALARMA y BLOQUEO. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00251">251</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00553">irAEstado()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l01038">manejarAlarma()</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l01069">manejarBloqueo()</a>.</p>
+
+</div>
+</div>
+<a id="aee6e22c3ab7c2b88778b595002fa92a4" name="aee6e22c3ab7c2b88778b595002fa92a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee6e22c3ab7c2b88778b595002fa92a4">&#9670;&#160;</a></span>ticsPuerta</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ticsPuerta = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ticks desde que la puerta quedó abierta. </p>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="group__fsm.html#ga5f7a9dcc2a087a1d7d9813cb5b7ce098" title="Manejador del estado EST_ABRIENDO.">manejarAbriendo()</a> </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00266">266</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00379">abrirPuerta()</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l01011">manejarAbriendo()</a>.</p>
+
+</div>
+</div>
+<a id="aac44debae56a5ef3b652ac751b965c03" name="aac44debae56a5ef3b652ac751b965c03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac44debae56a5ef3b652ac751b965c03">&#9670;&#160;</a></span>ticsUltimaAlarma</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ticsUltimaAlarma = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tick global en que ocurrió la última alarma (para ventana consecutiva). </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00260">260</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00619">activarAlarma()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

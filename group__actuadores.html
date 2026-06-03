@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sistema de Seguridad Embebido: Control de actuadores</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Sistema de Seguridad Embebido<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Control de acceso y monitoreo ambiental con FreeRTOS en Arduino Mega</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('group__actuadores.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Control de actuadores <div class="ingroups"><a class="el" href="group__sistema__seguridad.html">Sistema de Seguridad</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Diagrama de colaboración de Control de actuadores:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 --></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:ga2a424a53e71040ea1a466f4d0adf0b6a" id="r_ga2a424a53e71040ea1a466f4d0adf0b6a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga2a424a53e71040ea1a466f4d0adf0b6a">limpiarSalidas</a> ()</td></tr>
+<tr class="memdesc:ga2a424a53e71040ea1a466f4d0adf0b6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apaga todos los actuadores de señalización.  <br /></td></tr>
+<tr class="memitem:gae1fd3f671724f825c66f4c23af9fd268" id="r_gae1fd3f671724f825c66f4c23af9fd268"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#gae1fd3f671724f825c66f4c23af9fd268">abrirPuerta</a> ()</td></tr>
+<tr class="memdesc:gae1fd3f671724f825c66f4c23af9fd268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abre la puerta girando el servo a 90°.  <br /></td></tr>
+<tr class="memitem:gaed4c8c6afaab193de8058bd95a226644" id="r_gaed4c8c6afaab193de8058bd95a226644"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#gaed4c8c6afaab193de8058bd95a226644">cerrarPuerta</a> ()</td></tr>
+<tr class="memdesc:gaed4c8c6afaab193de8058bd95a226644"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cierra la puerta girando el servo a 0°.  <br /></td></tr>
+<tr class="memitem:ga9040ae03ed89ee4cdb3e20193ae912b9" id="r_ga9040ae03ed89ee4cdb3e20193ae912b9"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ga9040ae03ed89ee4cdb3e20193ae912b9">botonPresionado</a> ()</td></tr>
+<tr class="memdesc:ga9040ae03ed89ee4cdb3e20193ae912b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detecta la pulsación del botón físico con anti-rebote por ticks.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descripción detallada</h2>
+<div class="textblock"></div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentación de funciones</h2>
+<a id="gae1fd3f671724f825c66f4c23af9fd268" name="gae1fd3f671724f825c66f4c23af9fd268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae1fd3f671724f825c66f4c23af9fd268">&#9670;&#160;</a></span>abrirPuerta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void abrirPuerta </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Abre la puerta girando el servo a 90°. </p>
+<p>Establece <span class="tt"><a class="el" href="sistema__seguridad_8cpp.html#a18370e902de904f4c05140b7cc2983ab" title="Estado lógico de la puerta.">puertaAbiertaFlag</a> = true</span>, enciende <span class="tt"><a class="el" href="group__config.html#gaa023481d2f7313e7029f4502afb8ea8d" title="Pin del LED verde (acceso permitido).">LED_VERDE</a></span> y reinicia <span class="tt"><a class="el" href="sistema__seguridad_8cpp.html#aee6e22c3ab7c2b88778b595002fa92a4" title="Ticks desde que la puerta quedó abierta.">ticsPuerta</a></span>. El cierre automático lo gestiona <a class="el" href="group__fsm.html#ga5f7a9dcc2a087a1d7d9813cb5b7ce098" title="manejarAbriendo()">manejarAbriendo()</a>.</p>
+<dl class="section user"><dt>Returns</dt><dd>Nothing. </dd></dl>
+<p>&lt;Pin del LED verde (acceso permitido).</p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00379">379</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="sistema__seguridad_8cpp_source.html#l00131">LED_VERDE</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00248">puertaAbiertaFlag</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00117">puertaServo</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00266">ticsPuerta</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00553">irAEstado()</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 1 --></div>
+</div>
+
+</div>
+</div>
+<a id="ga9040ae03ed89ee4cdb3e20193ae912b9" name="ga9040ae03ed89ee4cdb3e20193ae912b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9040ae03ed89ee4cdb3e20193ae912b9">&#9670;&#160;</a></span>botonPresionado()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool botonPresionado </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Detecta la pulsación del botón físico con anti-rebote por ticks. </p>
+<p>Debe invocarse una vez por tick (cada 100 ms) desde <a class="el" href="group__fsm.html#ga2d0a3d09291c6fdbf9bcf10a2c682083" title="manejarBloqueo()">manejarBloqueo()</a>. Acumula ticks con nivel LOW; retorna <span class="tt">true</span> solo al soltar el botón si estuvo presionado al menos <span class="tt"><a class="el" href="group__config.html#gabd4bea995bfb36973c65c611f2aad62b" title="Anti-rebote del botón en ticks (100 ms).">TICKS_DEBOUNCE_BTN</a></span> ticks consecutivos.</p>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>Pulsación válida detectada. </td></tr>
+    <tr><td class="paramname">false</td><td>No hubo pulsación válida en este tick. </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt;Pin del botón de desbloqueo de emergencia (INPUT_PULLUP).</p>
+<p>&lt;Anti-rebote del botón en ticks (100 ms).</p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00417">417</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="sistema__seguridad_8cpp_source.html#l00134">PIN_BOTON</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00154">TICKS_DEBOUNCE_BTN</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l01069">manejarBloqueo()</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 2 --></div>
+</div>
+
+</div>
+</div>
+<a id="gaed4c8c6afaab193de8058bd95a226644" name="gaed4c8c6afaab193de8058bd95a226644"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaed4c8c6afaab193de8058bd95a226644">&#9670;&#160;</a></span>cerrarPuerta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cerrarPuerta </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Cierra la puerta girando el servo a 0°. </p>
+<p>Establece <span class="tt"><a class="el" href="sistema__seguridad_8cpp.html#a18370e902de904f4c05140b7cc2983ab" title="Estado lógico de la puerta.">puertaAbiertaFlag</a> = false</span> y apaga <span class="tt"><a class="el" href="group__config.html#gaa023481d2f7313e7029f4502afb8ea8d" title="Pin del LED verde (acceso permitido).">LED_VERDE</a></span>. Normalmente es llamada por <a class="el" href="group__fsm.html#ga5f7a9dcc2a087a1d7d9813cb5b7ce098" title="manejarAbriendo()">manejarAbriendo()</a> al expirar el temporizador <span class="tt"><a class="el" href="group__config.html#gaaebb3efeb5b24e9227e92aacec9b7536" title="Tiempo de puerta abierta en ticks (5 s).">TICKS_PUERTA</a></span>, o por <a class="el" href="group__tareas.html#ga9603b1c503abd2bd6f6e355fed914150" title="TaskIntrusos">TaskIntrusos</a> al detectar la puerta abierta como intrusión.</p>
+<dl class="section user"><dt>Returns</dt><dd>Nothing. </dd></dl>
+<p>&lt;Pin del LED verde (acceso permitido).</p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00399">399</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="sistema__seguridad_8cpp_source.html#l00131">LED_VERDE</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00248">puertaAbiertaFlag</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00117">puertaServo</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l01011">manejarAbriendo()</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 3 --></div>
+</div>
+
+</div>
+</div>
+<a id="ga2a424a53e71040ea1a466f4d0adf0b6a" name="ga2a424a53e71040ea1a466f4d0adf0b6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2a424a53e71040ea1a466f4d0adf0b6a">&#9670;&#160;</a></span>limpiarSalidas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void limpiarSalidas </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Apaga todos los actuadores de señalización. </p>
+<p>Pone en LOW los LEDs <span class="tt"><a class="el" href="group__config.html#ga7885f8a39915e51a832bd4d49a003a97" title="Pin del LED rojo (alarma / bloqueo).">LED_ROJO</a></span> y <span class="tt"><a class="el" href="group__config.html#gaa023481d2f7313e7029f4502afb8ea8d" title="Pin del LED verde (acceso permitido).">LED_VERDE</a></span>, detiene el buzzer con <span class="tt">noTone()</span> y reinicia <span class="tt"><a class="el" href="sistema__seguridad_8cpp.html#a05ea27aa45fb64df20896a3643cc2fa3" title="Indica si el LED rojo está encendido en el ciclo de parpadeo.">ledOn</a></span>. Debe invocarse antes de cada transición de estado. </p><dl class="section see"><dt>Ver también</dt><dd><a class="el" href="group__fsm.html#gaee03cd25b71f09567dcf074ff59c8046" title="Ejecuta la transición de la FSM al estado indicado.">irAEstado()</a></dd></dl>
+<dl class="section user"><dt>Returns</dt><dd>Nothing. </dd></dl>
+<p>&lt;Pin del LED rojo (alarma / bloqueo).</p>
+<p>&lt;Pin del LED verde (acceso permitido).</p>
+<p>&lt;Pin digital del buzzer pasivo.</p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00362">362</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="sistema__seguridad_8cpp_source.html#l00130">BUZZER</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00132">LED_ROJO</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00131">LED_VERDE</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00254">ledOn</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00553">irAEstado()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l01038">manejarAlarma()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l01069">manejarBloqueo()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00963">manejarInicio()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00818">TaskAmbiental()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00876">TaskIntrusos()</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00657">verificarRFID()</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 4 --></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,546 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sistema de Seguridad Embebido: Hardware y periféricos</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Sistema de Seguridad Embebido<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Control de acceso y monitoreo ambiental con FreeRTOS en Arduino Mega</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('group__hardware.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Hardware y periféricos <div class="ingroups"><a class="el" href="group__sistema__seguridad.html">Sistema de Seguridad</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Diagrama de colaboración de Hardware y periféricos:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 --></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:gaf97afdf00af0e116e9b5957f6a470fc2" id="r_gaf97afdf00af0e116e9b5957f6a470fc2"><td class="memItemLeft">LiquidCrystal&#160;</td><td class="memItemRight"><a class="el" href="#gaf97afdf00af0e116e9b5957f6a470fc2">lcd</a> (12, 11, 5, 4, 3, 2)</td></tr>
+<tr class="memdesc:gaf97afdf00af0e116e9b5957f6a470fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Objeto LCD de 16×2. Pines: RS=12, EN=11, D4=5, D5=4, D6=3, D7=2.  <br /></td></tr>
+<tr class="memitem:ga3dfc78456f71b1381f9c7021a01efc95" id="r_ga3dfc78456f71b1381f9c7021a01efc95"><td class="memItemLeft">MFRC522&#160;</td><td class="memItemRight"><a class="el" href="#ga3dfc78456f71b1381f9c7021a01efc95">rfid</a> (53, 9)</td></tr>
+<tr class="memdesc:ga3dfc78456f71b1381f9c7021a01efc95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Objeto lector RFID MFRC522.  <br /></td></tr>
+<tr class="memitem:gaac7b29dc45caaaca67299571f6a2dcc0" id="r_gaac7b29dc45caaaca67299571f6a2dcc0"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#gaac7b29dc45caaaca67299571f6a2dcc0">freeRam</a> ()</td></tr>
+<tr class="memdesc:gaac7b29dc45caaaca67299571f6a2dcc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna los bytes libres en el heap de RAM.  <br /></td></tr>
+<tr class="memitem:ga9f11914e61e4c2bf68e9b8cc91db5628" id="r_ga9f11914e61e4c2bf68e9b8cc91db5628"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ga9f11914e61e4c2bf68e9b8cc91db5628">lcdEscribir</a> (String l1, String l2)</td></tr>
+<tr class="memdesc:ga9f11914e61e4c2bf68e9b8cc91db5628"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escribe dos líneas de texto en el LCD 16×2.  <br /></td></tr>
+<tr class="memitem:gada75dfc0a4a2cbd90fb6b3f8228b2590" id="r_gada75dfc0a4a2cbd90fb6b3f8228b2590"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#gada75dfc0a4a2cbd90fb6b3f8228b2590">verificarRFID</a> ()</td></tr>
+<tr class="memdesc:gada75dfc0a4a2cbd90fb6b3f8228b2590"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lee una tarjeta RFID y autoriza o deniega el acceso.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga829655a147df70dd4cc94eae40a2204e" id="r_ga829655a147df70dd4cc94eae40a2204e"><td class="memItemLeft">const byte&#160;</td><td class="memItemRight"><a class="el" href="#ga829655a147df70dd4cc94eae40a2204e">ROWS</a> = 4</td></tr>
+<tr class="memdesc:ga829655a147df70dd4cc94eae40a2204e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Número de filas del teclado matricial.  <br /></td></tr>
+<tr class="memitem:gaefd90f1160eaa105bc910d4d7c46b815" id="r_gaefd90f1160eaa105bc910d4d7c46b815"><td class="memItemLeft">const byte&#160;</td><td class="memItemRight"><a class="el" href="#gaefd90f1160eaa105bc910d4d7c46b815">COLS</a> = 4</td></tr>
+<tr class="memdesc:gaefd90f1160eaa105bc910d4d7c46b815"><td class="mdescLeft">&#160;</td><td class="mdescRight">Número de columnas del teclado matricial.  <br /></td></tr>
+<tr class="memitem:ga856e873a1d14012d57ddb813c4a1e40a" id="r_ga856e873a1d14012d57ddb813c4a1e40a"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#ga856e873a1d14012d57ddb813c4a1e40a">keys</a> [<a class="el" href="#ga829655a147df70dd4cc94eae40a2204e">ROWS</a>][<a class="el" href="#gaefd90f1160eaa105bc910d4d7c46b815">COLS</a>]</td></tr>
+<tr class="memdesc:ga856e873a1d14012d57ddb813c4a1e40a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mapa de caracteres del teclado matricial 4×4.  <br /></td></tr>
+<tr class="memitem:ga6d6753e0ae098b31e2f84d4024e361cf" id="r_ga6d6753e0ae098b31e2f84d4024e361cf"><td class="memItemLeft">byte&#160;</td><td class="memItemRight"><a class="el" href="#ga6d6753e0ae098b31e2f84d4024e361cf">rowPins</a> [<a class="el" href="#ga829655a147df70dd4cc94eae40a2204e">ROWS</a>] = {33, 35, 37, 39}</td></tr>
+<tr class="memdesc:ga6d6753e0ae098b31e2f84d4024e361cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pines de Arduino conectados a las filas del teclado.  <br /></td></tr>
+<tr class="memitem:gaa9fece7b062124080e4b2976f9a8b675" id="r_gaa9fece7b062124080e4b2976f9a8b675"><td class="memItemLeft">byte&#160;</td><td class="memItemRight"><a class="el" href="#gaa9fece7b062124080e4b2976f9a8b675">colPins</a> [<a class="el" href="#gaefd90f1160eaa105bc910d4d7c46b815">COLS</a>] = {41, 43, 45, 47}</td></tr>
+<tr class="memdesc:gaa9fece7b062124080e4b2976f9a8b675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pines de Arduino conectados a las columnas del teclado.  <br /></td></tr>
+<tr class="memitem:ga0e6c3cc7e8c762ab0ca1fa2296d7bbfe" id="r_ga0e6c3cc7e8c762ab0ca1fa2296d7bbfe"><td class="memItemLeft">Keypad&#160;</td><td class="memItemRight"><a class="el" href="#ga0e6c3cc7e8c762ab0ca1fa2296d7bbfe">keypad</a> = Keypad(makeKeymap(<a class="el" href="#ga856e873a1d14012d57ddb813c4a1e40a">keys</a>), <a class="el" href="#ga6d6753e0ae098b31e2f84d4024e361cf">rowPins</a>, <a class="el" href="#gaa9fece7b062124080e4b2976f9a8b675">colPins</a>, <a class="el" href="#ga829655a147df70dd4cc94eae40a2204e">ROWS</a>, <a class="el" href="#gaefd90f1160eaa105bc910d4d7c46b815">COLS</a>)</td></tr>
+<tr class="memdesc:ga0e6c3cc7e8c762ab0ca1fa2296d7bbfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Objeto teclado matricial.  <br /></td></tr>
+<tr class="memitem:gab6b14da16e523e0e75bd2647d88a6b77" id="r_gab6b14da16e523e0e75bd2647d88a6b77"><td class="memItemLeft">Servo&#160;</td><td class="memItemRight"><a class="el" href="#gab6b14da16e523e0e75bd2647d88a6b77">puertaServo</a></td></tr>
+<tr class="memdesc:gab6b14da16e523e0e75bd2647d88a6b77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Servo-motor que actúa como cerradura electrónica.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descripción detallada</h2>
+<div class="textblock"></div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentación de funciones</h2>
+<a id="gaac7b29dc45caaaca67299571f6a2dcc0" name="gaac7b29dc45caaaca67299571f6a2dcc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaac7b29dc45caaaca67299571f6a2dcc0">&#9670;&#160;</a></span>freeRam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int freeRam </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Retorna los bytes libres en el heap de RAM. </p>
+<p>Usa las variables de enlazador <span class="tt">__heap_start</span> y <span class="tt">__brkval</span> para estimar la RAM disponible. Útil para diagnóstico en tiempo de ejecución.</p>
+<dl class="section user"><dt>Returns</dt><dd>Número de bytes libres en el heap. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00317">317</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00711">setup()</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 1 --></div>
+</div>
+
+</div>
+</div>
+<a id="gaf97afdf00af0e116e9b5957f6a470fc2" name="gaf97afdf00af0e116e9b5957f6a470fc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf97afdf00af0e116e9b5957f6a470fc2">&#9670;&#160;</a></span>lcd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LiquidCrystal lcd </td>
+          <td>(</td>
+          <td class="paramtype">12</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">11</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">5</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">4</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">3</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">2</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Objeto LCD de 16×2. Pines: RS=12, EN=11, D4=5, D5=4, D6=3, D7=2. </p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00336">lcdEscribir()</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00711">setup()</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 2 --></div>
+</div>
+
+</div>
+</div>
+<a id="ga9f11914e61e4c2bf68e9b8cc91db5628" name="ga9f11914e61e4c2bf68e9b8cc91db5628"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9f11914e61e4c2bf68e9b8cc91db5628">&#9670;&#160;</a></span>lcdEscribir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lcdEscribir </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>l1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>l2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Escribe dos líneas de texto en el LCD 16×2. </p>
+<p>Limpia el display y rellena cada línea con espacios hasta 16 caracteres. Si la cadena supera los 16 caracteres, se trunca.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">l1</td><td>Texto para la fila 0 (máx. 16 caracteres). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">l2</td><td>Texto para la fila 1 (máx. 16 caracteres).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section user"><dt>Returns</dt><dd>Nothing. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00336">336</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="#gaf97afdf00af0e116e9b5957f6a470fc2">lcd()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00553">irAEstado()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l01069">manejarBloqueo()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l01137">manejarConfig()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00963">manejarInicio()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00818">TaskAmbiental()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00876">TaskIntrusos()</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00657">verificarRFID()</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 3 --></div>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 4 --></div>
+</div>
+
+</div>
+</div>
+<a id="ga3dfc78456f71b1381f9c7021a01efc95" name="ga3dfc78456f71b1381f9c7021a01efc95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3dfc78456f71b1381f9c7021a01efc95">&#9670;&#160;</a></span>rfid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MFRC522 rfid </td>
+          <td>(</td>
+          <td class="paramtype">53</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">9</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Objeto lector RFID MFRC522. </p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l01137">manejarConfig()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00711">setup()</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00657">verificarRFID()</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 5 --></div>
+</div>
+
+</div>
+</div>
+<a id="gada75dfc0a4a2cbd90fb6b3f8228b2590" name="gada75dfc0a4a2cbd90fb6b3f8228b2590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gada75dfc0a4a2cbd90fb6b3f8228b2590">&#9670;&#160;</a></span>verificarRFID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void verificarRFID </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Lee una tarjeta RFID y autoriza o deniega el acceso. </p>
+<p>Construye el UID en hexadecimal (mayúsculas) y lo compara con <span class="tt">uidAutorizado</span>:</p>
+<ul>
+<li><b>UID válido</b>: reinicia <span class="tt"><a class="el" href="sistema__seguridad_8cpp.html#a35c6d852422d51628a060ad8f323746e" title="Intentos de acceso fallidos (clave o RFID). Se reinicia al desbloquear.">intentosFallidos</a></span>, emite beep de 1500 Hz, y llama a <span class="tt">irAEstado(EST_ABRIENDO)</span>.</li>
+<li><b>UID inválido</b>: incrementa <span class="tt"><a class="el" href="sistema__seguridad_8cpp.html#a35c6d852422d51628a060ad8f323746e" title="Intentos de acceso fallidos (clave o RFID). Se reinicia al desbloquear.">intentosFallidos</a></span>; al alcanzar 3 llama a <span class="tt">irAEstado(EST_BLOQUEO)</span>.</li>
+</ul>
+<p>Usa <span class="tt">vTaskDelay</span> internamente, por lo que <b>solo debe invocarse desde una tarea FreeRTOS</b> (<a class="el" href="group__tareas.html#gabf2ea295dd40f5ef9c4104310ad3d0d7" title="TaskControl">TaskControl</a> vía <a class="el" href="group__fsm.html#gafb90bcd3aa03635c0f7b49cec80f634e" title="manejarInicio()">manejarInicio()</a>).</p>
+<dl class="section user"><dt>Returns</dt><dd>Nothing.</dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="group__fsm.html#gafb90bcd3aa03635c0f7b49cec80f634e" title="Manejador del estado EST_INICIO.">manejarInicio()</a>, <a class="el" href="group__fsm.html#gaee03cd25b71f09567dcf074ff59c8046" title="Ejecuta la transición de la FSM al estado indicado.">irAEstado()</a>, <a class="el" href="sistema__seguridad_8cpp.html#a35c6d852422d51628a060ad8f323746e" title="Intentos de acceso fallidos (clave o RFID). Se reinicia al desbloquear.">intentosFallidos</a> </dd></dl>
+<p>&lt;Pin digital del buzzer pasivo.</p>
+<p>&lt;Pin del LED rojo (alarma / bloqueo).</p>
+<p>&lt;Pin digital del buzzer pasivo.</p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00657">657</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="sistema__seguridad_8cpp_source.html#l00130">BUZZER</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00214">EST_ABRIENDO</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00219">EST_BLOQUEO</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00213">EST_INICIO</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00217">EST_MONITOR_AMBIENTAL</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00229">estadoPost</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00241">intentosFallidos</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00553">irAEstado()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00336">lcdEscribir()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00132">LED_ROJO</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00362">limpiarSalidas()</a> y <a class="el" href="#ga3dfc78456f71b1381f9c7021a01efc95">rfid()</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00963">manejarInicio()</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 6 --></div>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 7 --></div>
+</div>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Documentación de variables</h2>
+<a id="gaa9fece7b062124080e4b2976f9a8b675" name="gaa9fece7b062124080e4b2976f9a8b675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9fece7b062124080e4b2976f9a8b675">&#9670;&#160;</a></span>colPins</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte colPins[<a class="el" href="#gaefd90f1160eaa105bc910d4d7c46b815">COLS</a>] = {41, 43, 45, 47}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Pines de Arduino conectados a las columnas del teclado. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00108">108</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+</div>
+</div>
+<a id="gaefd90f1160eaa105bc910d4d7c46b815" name="gaefd90f1160eaa105bc910d4d7c46b815"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaefd90f1160eaa105bc910d4d7c46b815">&#9670;&#160;</a></span>COLS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const byte COLS = 4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Número de columnas del teclado matricial. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00086">86</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ga0e6c3cc7e8c762ab0ca1fa2296d7bbfe" name="ga0e6c3cc7e8c762ab0ca1fa2296d7bbfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0e6c3cc7e8c762ab0ca1fa2296d7bbfe">&#9670;&#160;</a></span>keypad</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Keypad keypad = Keypad(makeKeymap(<a class="el" href="#ga856e873a1d14012d57ddb813c4a1e40a">keys</a>), <a class="el" href="#ga6d6753e0ae098b31e2f84d4024e361cf">rowPins</a>, <a class="el" href="#gaa9fece7b062124080e4b2976f9a8b675">colPins</a>, <a class="el" href="#ga829655a147df70dd4cc94eae40a2204e">ROWS</a>, <a class="el" href="#gaefd90f1160eaa105bc910d4d7c46b815">COLS</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Objeto teclado matricial. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00111">111</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l01069">manejarBloqueo()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l01137">manejarConfig()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00963">manejarInicio()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00818">TaskAmbiental()</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00876">TaskIntrusos()</a>.</p>
+
+</div>
+</div>
+<a id="ga856e873a1d14012d57ddb813c4a1e40a" name="ga856e873a1d14012d57ddb813c4a1e40a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga856e873a1d14012d57ddb813c4a1e40a">&#9670;&#160;</a></span>keys</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char keys[<a class="el" href="#ga829655a147df70dd4cc94eae40a2204e">ROWS</a>][<a class="el" href="#gaefd90f1160eaa105bc910d4d7c46b815">COLS</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+<b>Valor inicial:</b><div class="fragment"><div class="line">          = {</div>
+<div class="line">  {<span class="charliteral">&#39;1&#39;</span>,<span class="charliteral">&#39;2&#39;</span>,<span class="charliteral">&#39;3&#39;</span>,<span class="charliteral">&#39;A&#39;</span>},</div>
+<div class="line">  {<span class="charliteral">&#39;4&#39;</span>,<span class="charliteral">&#39;5&#39;</span>,<span class="charliteral">&#39;6&#39;</span>,<span class="charliteral">&#39;B&#39;</span>},</div>
+<div class="line">  {<span class="charliteral">&#39;7&#39;</span>,<span class="charliteral">&#39;8&#39;</span>,<span class="charliteral">&#39;9&#39;</span>,<span class="charliteral">&#39;C&#39;</span>},</div>
+<div class="line">  {<span class="charliteral">&#39;*&#39;</span>,<span class="charliteral">&#39;0&#39;</span>,<span class="charliteral">&#39;#&#39;</span>,<span class="charliteral">&#39;D&#39;</span>}</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>Mapa de caracteres del teclado matricial 4×4. </p>
+<div class="fragment"><div class="line">{<span class="charliteral">&#39;1&#39;</span>,<span class="charliteral">&#39;2&#39;</span>,<span class="charliteral">&#39;3&#39;</span>,<span class="charliteral">&#39;A&#39;</span>},</div>
+<div class="line">{<span class="charliteral">&#39;4&#39;</span>,<span class="charliteral">&#39;5&#39;</span>,<span class="charliteral">&#39;6&#39;</span>,<span class="charliteral">&#39;B&#39;</span>},</div>
+<div class="line">{<span class="charliteral">&#39;7&#39;</span>,<span class="charliteral">&#39;8&#39;</span>,<span class="charliteral">&#39;9&#39;</span>,<span class="charliteral">&#39;C&#39;</span>},</div>
+<div class="line">{<span class="charliteral">&#39;*&#39;</span>,<span class="charliteral">&#39;0&#39;</span>,<span class="charliteral">&#39;#&#39;</span>,<span class="charliteral">&#39;D&#39;</span>}</div>
+</div><!-- fragment --> 
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00097">97</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+</div>
+</div>
+<a id="gab6b14da16e523e0e75bd2647d88a6b77" name="gab6b14da16e523e0e75bd2647d88a6b77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab6b14da16e523e0e75bd2647d88a6b77">&#9670;&#160;</a></span>puertaServo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Servo puertaServo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Servo-motor que actúa como cerradura electrónica. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00117">117</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00379">abrirPuerta()</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00399">cerrarPuerta()</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00711">setup()</a>.</p>
+
+</div>
+</div>
+<a id="ga6d6753e0ae098b31e2f84d4024e361cf" name="ga6d6753e0ae098b31e2f84d4024e361cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6d6753e0ae098b31e2f84d4024e361cf">&#9670;&#160;</a></span>rowPins</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte rowPins[<a class="el" href="#ga829655a147df70dd4cc94eae40a2204e">ROWS</a>] = {33, 35, 37, 39}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Pines de Arduino conectados a las filas del teclado. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00105">105</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ga829655a147df70dd4cc94eae40a2204e" name="ga829655a147df70dd4cc94eae40a2204e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga829655a147df70dd4cc94eae40a2204e">&#9670;&#160;</a></span>ROWS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const byte ROWS = 4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Número de filas del teclado matricial. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00083">83</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

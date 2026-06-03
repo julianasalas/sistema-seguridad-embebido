@@ -1,0 +1,358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sistema de Seguridad Embebido: Lectura de sensores</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Sistema de Seguridad Embebido<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Control de acceso y monitoreo ambiental con FreeRTOS en Arduino Mega</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('group__sensores.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Lectura de sensores <div class="ingroups"><a class="el" href="group__sistema__seguridad.html">Sistema de Seguridad</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Diagrama de colaboración de Lectura de sensores:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 --></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:gab96dd9550872ccc75be0a22d78a79863" id="r_gab96dd9550872ccc75be0a22d78a79863"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#gab96dd9550872ccc75be0a22d78a79863">leerTemp</a> ()</td></tr>
+<tr class="memdesc:gab96dd9550872ccc75be0a22d78a79863"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lee la temperatura con el termistor NTC del KY-013.  <br /></td></tr>
+<tr class="memitem:ga29e92705724ea23b5b79bc544e335cc2" id="r_ga29e92705724ea23b5b79bc544e335cc2"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ga29e92705724ea23b5b79bc544e335cc2">leerLuz</a> ()</td></tr>
+<tr class="memdesc:ga29e92705724ea23b5b79bc544e335cc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lee el nivel de iluminación con el KY-018 (LDR).  <br /></td></tr>
+<tr class="memitem:ga977c1be0b0a923cefb4fc18c85f77ae1" id="r_ga977c1be0b0a923cefb4fc18c85f77ae1"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ga977c1be0b0a923cefb4fc18c85f77ae1">leerMic</a> ()</td></tr>
+<tr class="memdesc:ga977c1be0b0a923cefb4fc18c85f77ae1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lee el nivel de ruido con el KY-037 (micrófono).  <br /></td></tr>
+<tr class="memitem:ga1073cc7ee88838657a31f2166d08373e" id="r_ga1073cc7ee88838657a31f2166d08373e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ga1073cc7ee88838657a31f2166d08373e">puertaAb</a> ()</td></tr>
+<tr class="memdesc:ga1073cc7ee88838657a31f2166d08373e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consulta el estado lógico de la puerta.  <br /></td></tr>
+<tr class="memitem:ga3d2ab528c2b581372c8e78a8ed8d0456" id="r_ga3d2ab528c2b581372c8e78a8ed8d0456"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ga3d2ab528c2b581372c8e78a8ed8d0456">hallDet</a> ()</td></tr>
+<tr class="memdesc:ga3d2ab528c2b581372c8e78a8ed8d0456"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detecta campo magnético con el sensor Hall KY-035.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descripción detallada</h2>
+<div class="textblock"></div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentación de funciones</h2>
+<a id="ga3d2ab528c2b581372c8e78a8ed8d0456" name="ga3d2ab528c2b581372c8e78a8ed8d0456"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3d2ab528c2b581372c8e78a8ed8d0456">&#9670;&#160;</a></span>hallDet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hallDet </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Detecta campo magnético con el sensor Hall KY-035. </p>
+<p>Compara la lectura de <span class="tt"><a class="el" href="group__config.html#ga9c80d45f4c5f9729887dcd301a26a342" title="Pin analógico sensor Hall KY-035.">PIN_HALL</a></span> con <span class="tt"><a class="el" href="group__config.html#ga50e08cfe2fa436c80e0a9f4f9dba3169" title="Valor de reposo del KY-035 (~Vcc/2).">HALL_REPOSO</a></span>. Si la desviación absoluta supera <span class="tt"><a class="el" href="group__config.html#ga4d570f8c01436f140ed43e910174e4d3" title="Desviación mínima del Hall para detección.">HALL_MARGEN</a></span>, se interpreta como presencia de un objeto con imán (movimiento de persona/objeto). Tres lecturas positivas consecutivas en <a class="el" href="group__tareas.html#ga9603b1c503abd2bd6f6e355fed914150" title="TaskIntrusos()">TaskIntrusos()</a> disparan la alarma.</p>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>Campo magnético detectado. </td></tr>
+    <tr><td class="paramname">false</td><td>Sensor en reposo; sin detección.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="group__tareas.html#ga9603b1c503abd2bd6f6e355fed914150" title="Tarea FreeRTOS de monitoreo de intrusos.">TaskIntrusos()</a>, <a class="el" href="group__config.html#ga50e08cfe2fa436c80e0a9f4f9dba3169" title="Valor de reposo del KY-035 (~Vcc/2).">HALL_REPOSO</a>, <a class="el" href="group__config.html#ga4d570f8c01436f140ed43e910174e4d3" title="Desviación mínima del Hall para detección.">HALL_MARGEN</a> </dd></dl>
+<p>&lt;Pin analógico sensor Hall KY-035.</p>
+<p>&lt;Valor de reposo del KY-035 (~Vcc/2).</p>
+<p>&lt;Desviación mínima del Hall para detección.</p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00517">517</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="sistema__seguridad_8cpp_source.html#l00174">HALL_MARGEN</a>, <a class="el" href="sistema__seguridad_8cpp_source.html#l00173">HALL_REPOSO</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00135">PIN_HALL</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00876">TaskIntrusos()</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 1 --></div>
+</div>
+
+</div>
+</div>
+<a id="ga29e92705724ea23b5b79bc544e335cc2" name="ga29e92705724ea23b5b79bc544e335cc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga29e92705724ea23b5b79bc544e335cc2">&#9670;&#160;</a></span>leerLuz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int leerLuz </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Lee el nivel de iluminación con el KY-018 (LDR). </p>
+<p>Valores bajos (&lt; <span class="tt"><a class="el" href="group__config.html#ga532ab754224e2d897d84f4b61abbb604" title="ADC mínimo KY-018; por debajo = oscuridad.">UMBRAL_LUZ</a></span>) indican oscuridad y disparan alarma en <a class="el" href="group__tareas.html#ga68f0ae52239a006625901567e8dfe5a5" title="TaskAmbiental()">TaskAmbiental()</a>.</p>
+<dl class="section user"><dt>Returns</dt><dd>Valor ADC de 0 a 1023.</dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="group__tareas.html#ga68f0ae52239a006625901567e8dfe5a5" title="Tarea FreeRTOS de monitoreo ambiental (temperatura y luz).">TaskAmbiental()</a>, <a class="el" href="group__config.html#ga532ab754224e2d897d84f4b61abbb604" title="ADC mínimo KY-018; por debajo = oscuridad.">UMBRAL_LUZ</a> </dd></dl>
+<p>&lt;Pin analógico sensor luz KY-018.</p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00477">477</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="sistema__seguridad_8cpp_source.html#l00138">PIN_LUZ</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00818">TaskAmbiental()</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 2 --></div>
+</div>
+
+</div>
+</div>
+<a id="ga977c1be0b0a923cefb4fc18c85f77ae1" name="ga977c1be0b0a923cefb4fc18c85f77ae1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga977c1be0b0a923cefb4fc18c85f77ae1">&#9670;&#160;</a></span>leerMic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int leerMic </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Lee el nivel de ruido con el KY-037 (micrófono). </p>
+<p>Valores superiores a <span class="tt"><a class="el" href="group__config.html#ga8fbc642c0d13d6b00405d24660bed982" title="ADC mínimo KY-037; por encima = ruido.">UMBRAL_MIC</a></span> se consideran ruido. La lógica de eventos acumulados se implementa en <a class="el" href="group__tareas.html#ga9603b1c503abd2bd6f6e355fed914150" title="TaskIntrusos()">TaskIntrusos()</a>.</p>
+<dl class="section user"><dt>Returns</dt><dd>Valor ADC de 0 a 1023.</dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="group__tareas.html#ga9603b1c503abd2bd6f6e355fed914150" title="Tarea FreeRTOS de monitoreo de intrusos.">TaskIntrusos()</a>, <a class="el" href="group__config.html#ga8fbc642c0d13d6b00405d24660bed982" title="ADC mínimo KY-037; por encima = ruido.">UMBRAL_MIC</a> </dd></dl>
+<p>&lt;Pin analógico sensor micrófono KY-037.</p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00491">491</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="sistema__seguridad_8cpp_source.html#l00136">PIN_MIC</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00876">TaskIntrusos()</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 3 --></div>
+</div>
+
+</div>
+</div>
+<a id="gab96dd9550872ccc75be0a22d78a79863" name="gab96dd9550872ccc75be0a22d78a79863"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab96dd9550872ccc75be0a22d78a79863">&#9670;&#160;</a></span>leerTemp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float leerTemp </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Lee la temperatura con el termistor NTC del KY-013. </p>
+<p>Convierte la lectura ADC del pin <span class="tt"><a class="el" href="group__config.html#ga65292d0ee3521543804b71d6726f162d" title="Pin analógico sensor temperatura KY-013.">PIN_TEMP</a></span> a temperatura mediante la ecuación de Steinhart-Hart de tres coeficientes: </p><div class="fragment"><div class="line"><span class="keywordtype">float</span> R2    = <a class="code hl_define" href="group__config.html#ga9012c823047a9783e49268794658cfd7">TERM_R1</a> * (1023.0 / Vo - 1.0);</div>
+<div class="line"><span class="keywordtype">float</span> logR2 = log(R2);</div>
+<div class="line"><span class="keywordtype">float</span> T     = 1.0 / (A + B*logR2 + C*logR2^3);</div>
+<div class="line"><span class="keywordflow">return</span> T - 273.15;</div>
+<div class="ttc" id="agroup__config_html_ga9012c823047a9783e49268794658cfd7"><div class="ttname"><a href="group__config.html#ga9012c823047a9783e49268794658cfd7">TERM_R1</a></div><div class="ttdeci">#define TERM_R1</div><div class="ttdoc">Resistencia de referencia KY-013 (10 kΩ).</div><div class="ttdef"><b>Definition</b> <a href="sistema__seguridad_8cpp_source.html#l00176">sistema_seguridad.cpp:176</a></div></div>
+</div><!-- fragment --><p> Si el ADC devuelve 0 (circuito abierto), retorna <span class="tt">-999</span> como centinela. La alarma se dispara cuando el valor supera el umbral <a class="el" href="group__config.html#ga75f7a864e4a04089bdb5f6b57c55105e" title="UMBRAL_TEMP">UMBRAL_TEMP</a>.</p>
+<dl class="section user"><dt>Returns</dt><dd>Temperatura en grados Celsius, o <span class="tt">-999</span> si la lectura es inválida.</dd></dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="group__tareas.html#ga68f0ae52239a006625901567e8dfe5a5" title="Tarea FreeRTOS de monitoreo ambiental (temperatura y luz).">TaskAmbiental()</a>, <a class="el" href="group__config.html#ga75f7a864e4a04089bdb5f6b57c55105e" title="Temperatura mínima en °C antes de alarma.">UMBRAL_TEMP</a> </dd></dl>
+<p>&lt;Pin analógico sensor temperatura KY-013.</p>
+<p>&lt;Resistencia de referencia KY-013 (10 kΩ).</p>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00455">455</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="sistema__seguridad_8cpp_source.html#l00137">PIN_TEMP</a> y <a class="el" href="sistema__seguridad_8cpp_source.html#l00176">TERM_R1</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00818">TaskAmbiental()</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 4 --></div>
+</div>
+
+</div>
+</div>
+<a id="ga1073cc7ee88838657a31f2166d08373e" name="ga1073cc7ee88838657a31f2166d08373e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1073cc7ee88838657a31f2166d08373e">&#9670;&#160;</a></span>puertaAb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool puertaAb </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="sistema__seguridad_8cpp.html">sistema_seguridad.cpp</a>&gt;</code></p>
+
+<p>Consulta el estado lógico de la puerta. </p>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>La puerta está abierta (servo en 90°). </td></tr>
+    <tr><td class="paramname">false</td><td>La puerta está cerrada (servo en 0°).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="sistema__seguridad_8cpp.html#a18370e902de904f4c05140b7cc2983ab" title="Estado lógico de la puerta.">puertaAbiertaFlag</a>, <a class="el" href="group__actuadores.html#gae1fd3f671724f825c66f4c23af9fd268" title="Abre la puerta girando el servo a 90°.">abrirPuerta()</a>, <a class="el" href="group__actuadores.html#gaed4c8c6afaab193de8058bd95a226644" title="Cierra la puerta girando el servo a 0°.">cerrarPuerta()</a> </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="sistema__seguridad_8cpp_source.html#l00501">501</a> del archivo <a class="el" href="sistema__seguridad_8cpp_source.html">sistema_seguridad.cpp</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="sistema__seguridad_8cpp_source.html#l00248">puertaAbiertaFlag</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="sistema__seguridad_8cpp_source.html#l00876">TaskIntrusos()</a>.</p>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 5 --></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>
