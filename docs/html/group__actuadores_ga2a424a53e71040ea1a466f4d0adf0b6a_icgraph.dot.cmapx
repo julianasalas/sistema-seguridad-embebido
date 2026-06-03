@@ -1,0 +1,43 @@
+<map id="limpiarSalidas" name="limpiarSalidas">
+<area shape="rect" id="Node000001" title="Apaga todos los actuadores de señalización." alt="" coords="701,253,803,280"/>
+<area shape="rect" id="Node000002" href="$group__fsm.html#gaee03cd25b71f09567dcf074ff59c8046" title="Ejecuta la transición de la FSM al estado indicado." alt="" coords="575,253,653,280"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="683,267,654,269,653,264,688,266"/>
+<area shape="rect" id="Node000004" href="$group__tareas.html#ga68f0ae52239a006625901567e8dfe5a5" title="Tarea FreeRTOS de monitoreo ambiental (temperatura y luz)." alt="" coords="252,431,359,457"/>
+<area shape="poly" id="edge26_Node000001_Node000004" title=" " alt="" coords="735,291,702,336,654,387,595,435,562,456,528,472,478,483,427,481,380,472,342,461,342,455,381,467,428,476,478,477,526,467,560,451,592,431,650,383,698,333,731,294"/>
+<area shape="rect" id="Node000006" href="$group__tareas.html#ga9603b1c503abd2bd6f6e355fed914150" title="Tarea FreeRTOS de monitoreo de intrusos." alt="" coords="257,507,353,533"/>
+<area shape="poly" id="edge27_Node000001_Node000006" title=" " alt="" coords="744,293,711,370,686,412,655,450,625,479,598,498,567,511,527,523,482,531,435,534,354,530,354,524,435,529,481,526,526,518,565,506,595,493,621,474,651,446,681,409,706,368,739,296"/>
+<area shape="rect" id="Node000009" href="$group__fsm.html#gac808aafeb5903e9b330785699ccb0a6c" title="Manejador del estado EST_ALARMA." alt="" coords="415,380,524,407"/>
+<area shape="poly" id="edge23_Node000001_Node000009" title=" " alt="" coords="709,286,503,382,501,377,704,288"/>
+<area shape="rect" id="Node000010" href="$group__fsm.html#ga2d0a3d09291c6fdbf9bcf10a2c682083" title="Manejador del estado EST_BLOQUEO." alt="" coords="412,76,527,103"/>
+<area shape="poly" id="edge24_Node000001_Node000010" title=" " alt="" coords="716,246,525,124,496,106,495,101,528,119,721,244"/>
+<area shape="rect" id="Node000012" href="$group__fsm.html#gafb90bcd3aa03635c0f7b49cec80f634e" title="Manejador del estado EST_INICIO." alt="" coords="256,39,354,65"/>
+<area shape="poly" id="edge25_Node000001_Node000012" title=" " alt="" coords="736,239,707,186,662,120,633,88,601,58,565,34,526,16,501,10,475,8,423,13,375,26,337,40,334,36,373,21,422,8,475,3,502,5,528,11,568,29,604,54,637,84,666,117,712,184,741,240"/>
+<area shape="rect" id="Node000013" href="$group__hardware.html#gada75dfc0a4a2cbd90fb6b3f8228b2590" title="Lee una tarjeta RFID y autoriza o deniega el acceso." alt="" coords="420,25,519,52"/>
+<area shape="poly" id="edge28_Node000001_Node000013" title=" " alt="" coords="728,241,694,202,651,159,591,109,525,66,505,55,504,50,528,62,595,104,655,156,698,199,733,242"/>
+<area shape="rect" id="Node000003" href="$group__fsm.html#gae74e123e4c1ff81ee9a0c8f4085410fb" title="Registra y activa una alarma del sistema." alt="" coords="419,431,520,457"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="605,293,577,357,555,391,528,421,511,433,509,428,525,417,551,388,572,355,601,296"/>
+<area shape="poly" id="edge18_Node000002_Node000004" title=" " alt="" coords="574,287,528,313,470,340,414,370,325,433,323,428,411,366,468,336,525,308,570,289"/>
+<area shape="poly" id="edge20_Node000002_Node000006" title=" " alt="" coords="611,294,603,336,587,383,563,431,547,453,528,472,487,497,441,513,395,521,354,524,353,519,394,516,439,508,485,492,525,467,543,449,559,428,583,381,598,334,607,297"/>
+<area shape="rect" id="Node000007" href="$group__fsm.html#ga5f7a9dcc2a087a1d7d9813cb5b7ce098" title="Manejador del estado EST_ABRIENDO." alt="" coords="246,177,364,204"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="560,248,526,239,442,218,365,203,365,198,443,213,527,234,565,247"/>
+<area shape="rect" id="Node000008" href="$group__tareas.html#gabf2ea295dd40f5ef9c4104310ad3d0d7" title="Tarea FreeRTOS principal: ciclo de despacho de la FSM." alt="" coords="107,228,198,255"/>
+<area shape="poly" id="edge19_Node000002_Node000008" title=" " alt="" coords="557,272,417,279,331,277,246,269,196,258,194,253,246,264,332,272,417,274,562,270"/>
+<area shape="poly" id="edge10_Node000002_Node000009" title=" " alt="" coords="595,291,565,329,528,364,500,382,498,377,525,359,561,325,591,294"/>
+<area shape="poly" id="edge12_Node000002_Node000010" title=" " alt="" coords="599,238,569,182,549,151,525,123,501,106,501,100,528,119,553,148,574,180,604,239"/>
+<area shape="rect" id="Node000011" href="$group__fsm.html#ga5ab2ebd90930ec670038414547bf3a55" title="Manejador del estado EST_CONFIG." alt="" coords="252,228,358,255"/>
+<area shape="poly" id="edge14_Node000002_Node000011" title=" " alt="" coords="557,264,359,248,358,243,562,261"/>
+<area shape="poly" id="edge16_Node000002_Node000012" title=" " alt="" coords="579,244,525,206,326,68,327,63,528,202,584,244"/>
+<area shape="poly" id="edge21_Node000002_Node000013" title=" " alt="" coords="605,237,595,201,579,155,556,108,525,66,511,55,511,50,529,62,561,105,584,153,600,199,610,239"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="401,445,360,447,359,441,406,444"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="427,464,337,509,335,504,422,465"/>
+<area shape="rect" id="Node000005" href="$sistema__seguridad_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="Inicialización del sistema." alt="" coords="5,431,59,457"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="235,447,59,447,59,441,237,442"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="241,505,59,454,60,449,244,501"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="246,211,196,230,193,225,250,208"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="137,270,44,432,39,429,133,267"/>
+<area shape="poly" id="edge11_Node000009_Node000008" title=" " alt="" coords="402,376,326,350,245,313,202,285,169,258,169,253,205,281,247,308,328,346,407,375"/>
+<area shape="poly" id="edge13_Node000010_Node000008" title=" " alt="" coords="395,108,324,133,247,168,203,199,169,230,165,226,199,195,245,163,322,128,399,105"/>
+<area shape="poly" id="edge15_Node000011_Node000008" title=" " alt="" coords="235,243,199,244,197,239,239,240"/>
+<area shape="poly" id="edge17_Node000012_Node000008" title=" " alt="" coords="268,77,248,98,220,132,196,169,163,229,158,226,191,166,216,129,244,94,272,73"/>
+<area shape="poly" id="edge22_Node000013_Node000012" title=" " alt="" coords="402,45,356,51,354,46,407,43"/>
+</map>

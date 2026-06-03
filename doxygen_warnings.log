@@ -1,5 +1,0 @@
-warning: Specified markdown mainpage 'README.md' has not been defined as input file
-C:/Users/julis/Downloads/INO/sistema_seguridad.cpp:2: warning: the name 'sistema_seguridad_doxygen.ino' supplied as the argument in the \file statement is not an input file
-group__fsm:0: warning: Potential recursion while resolving @ref command!
-C:/Users/julis/Downloads/INO/sistema_seguridad.cpp:202: warning: unable to resolve reference to 'sistema_seguridad_doxygen.ino' for \ref command
-C:/Users/julis/Downloads/INO/sistema_seguridad.cpp:596: warning: Potential recursion while resolving @ref command!

@@ -1,0 +1,42 @@
+digraph "irAEstado"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="irAEstado",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Ejecuta la transición de la FSM al estado indicado."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="activarAlarma",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__fsm.html#gae74e123e4c1ff81ee9a0c8f4085410fb",tooltip="Registra y activa una alarma del sistema."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="TaskAmbiental",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__tareas.html#ga68f0ae52239a006625901567e8dfe5a5",tooltip="Tarea FreeRTOS de monitoreo ambiental (temperatura y luz)."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="setup",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$sistema__seguridad_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d",tooltip="Inicialización del sistema."];
+  Node2 -> Node5 [id="edge4_Node000002_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="TaskIntrusos",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__tareas.html#ga9603b1c503abd2bd6f6e355fed914150",tooltip="Tarea FreeRTOS de monitoreo de intrusos."];
+  Node5 -> Node4 [id="edge5_Node000005_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node6 [id="edge6_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="manejarAbriendo",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__fsm.html#ga5f7a9dcc2a087a1d7d9813cb5b7ce098",tooltip="Manejador del estado EST_ABRIENDO."];
+  Node6 -> Node7 [id="edge7_Node000006_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="TaskControl",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__tareas.html#gabf2ea295dd40f5ef9c4104310ad3d0d7",tooltip="Tarea FreeRTOS principal: ciclo de despacho de la FSM."];
+  Node7 -> Node4 [id="edge8_Node000007_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node8 [id="edge9_Node000001_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="manejarAlarma",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__fsm.html#gac808aafeb5903e9b330785699ccb0a6c",tooltip="Manejador del estado EST_ALARMA."];
+  Node8 -> Node7 [id="edge10_Node000008_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node9 [id="edge11_Node000001_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="manejarBloqueo",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__fsm.html#ga2d0a3d09291c6fdbf9bcf10a2c682083",tooltip="Manejador del estado EST_BLOQUEO."];
+  Node9 -> Node7 [id="edge12_Node000009_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node10 [id="edge13_Node000001_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="manejarConfig",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__fsm.html#ga5ab2ebd90930ec670038414547bf3a55",tooltip="Manejador del estado EST_CONFIG."];
+  Node10 -> Node7 [id="edge14_Node000010_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node11 [id="edge15_Node000001_Node000011",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="manejarInicio",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__fsm.html#gafb90bcd3aa03635c0f7b49cec80f634e",tooltip="Manejador del estado EST_INICIO."];
+  Node11 -> Node7 [id="edge16_Node000011_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node3 [id="edge17_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node7 [id="edge18_Node000001_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node5 [id="edge19_Node000001_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node12 [id="edge20_Node000001_Node000012",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="verificarRFID",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__hardware.html#gada75dfc0a4a2cbd90fb6b3f8228b2590",tooltip="Lee una tarjeta RFID y autoriza o deniega el acceso."];
+  Node12 -> Node11 [id="edge21_Node000012_Node000011",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

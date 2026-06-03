@@ -1,0 +1,15 @@
+<map id="rfid" name="rfid">
+<area shape="rect" id="Node000001" title="Objeto lector RFID MFRC522." alt="" coords="547,56,586,83"/>
+<area shape="rect" id="Node000002" href="$group__fsm.html#ga5ab2ebd90930ec670038414547bf3a55" title="Manejador del estado EST_CONFIG." alt="" coords="246,56,351,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="529,70,352,72,352,67,534,69"/>
+<area shape="rect" id="Node000004" href="$sistema__seguridad_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="Inicialización del sistema." alt="" coords="5,81,59,108"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="534,74,450,88,351,97,185,101,59,98,59,93,185,96,351,92,449,83,529,75"/>
+<area shape="rect" id="Node000005" href="$group__hardware.html#gada75dfc0a4a2cbd90fb6b3f8228b2590" title="Lee una tarjeta RFID y autoriza o deniega el acceso." alt="" coords="399,5,499,32"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="529,55,481,35,482,30,535,55"/>
+<area shape="rect" id="Node000003" href="$group__tareas.html#gabf2ea295dd40f5ef9c4104310ad3d0d7" title="Tarea FreeRTOS principal: ciclo de despacho de la FSM." alt="" coords="107,56,198,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="228,70,199,72,198,67,233,69"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="89,83,60,92,59,86,94,81"/>
+<area shape="rect" id="Node000006" href="$group__fsm.html#gafb90bcd3aa03635c0f7b49cec80f634e" title="Manejador del estado EST_INICIO." alt="" coords="250,5,348,32"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="381,19,348,21,348,16,386,18"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="246,37,194,58,192,53,241,38"/>
+</map>

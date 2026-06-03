@@ -1,0 +1,46 @@
+<map id="TaskControl" name="TaskControl">
+<area shape="rect" id="Node000001" title="Tarea FreeRTOS principal: ciclo de despacho de la FSM." alt="" coords="5,183,97,209"/>
+<area shape="rect" id="Node000002" href="$group__fsm.html#gaee03cd25b71f09567dcf074ff59c8046" title="Ejecuta la transición de la FSM al estado indicado." alt="" coords="493,208,572,235"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,196,480,216,477,221,97,201"/>
+<area shape="rect" id="Node000007" href="$group__fsm.html#ga5f7a9dcc2a087a1d7d9813cb5b7ce098" title="Manejador del estado EST_ABRIENDO." alt="" coords="145,157,263,184"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="95,186,131,181,127,185,99,191"/>
+<area shape="rect" id="Node000009" href="$group__fsm.html#gac808aafeb5903e9b330785699ccb0a6c" title="Manejador del estado EST_ALARMA." alt="" coords="314,56,422,83"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="73,180,144,143,226,111,306,86,302,90,228,116,146,148,77,184"/>
+<area shape="rect" id="Node000010" href="$group__fsm.html#ga2d0a3d09291c6fdbf9bcf10a2c682083" title="Manejador del estado EST_BLOQUEO." alt="" coords="311,5,425,32"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="61,181,95,143,143,103,182,81,222,62,302,35,298,39,224,67,184,86,146,108,99,147,65,184"/>
+<area shape="rect" id="Node000012" href="$group__fsm.html#ga5ab2ebd90930ec670038414547bf3a55" title="Manejador del estado EST_CONFIG." alt="" coords="315,411,421,437"/>
+<area shape="poly" id="edge17_Node000001_Node000012" title=" " alt="" coords="57,207,89,274,114,313,146,346,183,370,223,388,303,413,298,414,221,393,180,374,143,350,110,316,85,277,57,213"/>
+<area shape="rect" id="Node000014" href="$group__fsm.html#gafb90bcd3aa03635c0f7b49cec80f634e" title="Manejador del estado EST_INICIO." alt="" coords="155,309,253,336"/>
+<area shape="poly" id="edge21_Node000001_Node000014" title=" " alt="" coords="69,207,177,298,172,300,68,212"/>
+<area shape="rect" id="Node000003" href="$group__actuadores.html#gae1fd3f671724f825c66f4c23af9fd268" title="Abre la puerta girando el servo a 90°." alt="" coords="649,183,733,209"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="572,213,636,204,631,206,573,218"/>
+<area shape="rect" id="Node000004" href="$group__hardware.html#ga9f11914e61e4c2bf68e9b8cc91db5628" title="Escribe dos líneas de texto en el LCD 16×2." alt="" coords="650,360,732,387"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="549,232,668,349,662,349,547,237"/>
+<area shape="rect" id="Node000006" href="$group__actuadores.html#ga2a424a53e71040ea1a466f4d0adf0b6a" title="Apaga todos los actuadores de señalización." alt="" coords="640,233,742,260"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="572,225,627,236,621,236,573,230"/>
+<area shape="rect" id="Node000005" href="$group__hardware.html#gaf97afdf00af0e116e9b5957f6a470fc2" title="Objeto LCD de 16×2. Pines: RS=12, EN=11, D4=5, D5=4, D6=3, D7=2." alt="" coords="790,360,828,387"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="732,371,777,373,772,374,733,376"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="263,176,426,200,481,211,476,212,425,205,264,181"/>
+<area shape="rect" id="Node000008" href="$group__actuadores.html#gaed4c8c6afaab193de8058bd95a226644" title="Cierra la puerta girando el servo a 0°." alt="" coords="322,107,414,133"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="248,154,310,137,306,140,251,159"/>
+<area shape="poly" id="edge10_Node000009_Node000002" title=" " alt="" coords="409,80,427,93,445,117,452,141,459,164,475,188,488,200,483,199,471,191,454,166,447,142,440,120,423,97,409,86"/>
+<area shape="poly" id="edge11_Node000009_Node000006" title=" " alt="" coords="401,81,427,92,534,155,641,219,651,226,645,226,638,224,532,159,424,97,402,86"/>
+<area shape="poly" id="edge14_Node000010_Node000002" title=" " alt="" coords="410,30,427,42,441,61,448,80,453,116,457,151,463,169,475,188,486,199,481,199,471,191,458,171,451,152,447,116,443,81,436,64,423,46,411,35"/>
+<area shape="poly" id="edge15_Node000010_Node000004" title=" " alt="" coords="409,30,427,42,445,68,452,93,458,118,475,142,490,154,504,161,533,168,562,175,577,182,594,194,632,256,678,347,673,345,627,259,590,198,575,187,560,180,531,173,502,166,487,158,471,146,453,120,447,95,440,70,423,46,410,35"/>
+<area shape="poly" id="edge16_Node000010_Node000006" title=" " alt="" coords="401,30,426,42,515,81,552,102,594,137,610,159,618,179,626,199,642,220,646,225,641,224,638,223,621,202,613,181,605,161,590,140,549,106,513,86,424,46,402,35"/>
+<area shape="rect" id="Node000011" href="$group__actuadores.html#ga9040ae03ed89ee4cdb3e20193ae912b9" title="Detecta la pulsación del botón físico con anti&#45;rebote por ticks." alt="" coords="473,5,592,32"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="425,16,460,18,455,20,427,21"/>
+<area shape="poly" id="edge18_Node000012_Node000002" title=" " alt="" coords="407,408,424,397,456,361,483,321,519,251,523,247,487,324,460,364,427,401,409,413"/>
+<area shape="poly" id="edge19_Node000012_Node000004" title=" " alt="" coords="407,435,446,446,493,454,543,456,591,447,632,424,665,399,670,397,635,429,593,452,543,461,492,460,445,451,406,441"/>
+<area shape="rect" id="Node000013" href="$group__hardware.html#ga3dfc78456f71b1381f9c7021a01efc95" title="Objeto lector RFID MFRC522." alt="" coords="513,411,552,437"/>
+<area shape="poly" id="edge20_Node000012_Node000013" title=" " alt="" coords="421,421,500,424,495,424,421,427"/>
+<area shape="poly" id="edge22_Node000014_Node000002" title=" " alt="" coords="249,306,480,236,477,240,251,311"/>
+<area shape="poly" id="edge23_Node000014_Node000004" title=" " alt="" coords="213,334,250,392,278,423,312,447,386,480,418,489,449,493,481,492,514,487,591,462,614,449,635,433,669,400,673,398,639,437,617,454,593,466,515,492,481,497,449,498,417,494,384,485,310,452,275,427,246,395,211,339"/>
+<area shape="poly" id="edge24_Node000014_Node000006" title=" " alt="" coords="253,314,425,289,627,257,622,260,426,295,254,319"/>
+<area shape="rect" id="Node000015" href="$group__hardware.html#gada75dfc0a4a2cbd90fb6b3f8228b2590" title="Lee una tarjeta RFID y autoriza o deniega el acceso." alt="" coords="318,360,418,387"/>
+<area shape="poly" id="edge25_Node000014_Node000015" title=" " alt="" coords="250,334,311,354,305,356,250,339"/>
+<area shape="poly" id="edge26_Node000015_Node000002" title=" " alt="" coords="382,358,503,246,508,244,385,362"/>
+<area shape="poly" id="edge27_Node000015_Node000004" title=" " alt="" coords="418,371,637,373,632,374,419,376"/>
+<area shape="poly" id="edge28_Node000015_Node000006" title=" " alt="" coords="409,357,591,288,644,268,649,266,593,293,410,362"/>
+<area shape="poly" id="edge29_Node000015_Node000013" title=" " alt="" coords="414,385,501,413,495,414,414,390"/>
+</map>

@@ -1,0 +1,22 @@
+<map id="TaskAmbiental" name="TaskAmbiental">
+<area shape="rect" id="Node000001" title="Tarea FreeRTOS de monitoreo ambiental (temperatura y luz)." alt="" coords="5,120,113,147"/>
+<area shape="rect" id="Node000002" href="$group__fsm.html#gae74e123e4c1ff81ee9a0c8f4085410fb" title="Registra y activa una alarma del sistema." alt="" coords="161,95,262,121"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,122,147,117,143,121,114,127"/>
+<area shape="rect" id="Node000003" href="$group__fsm.html#gaee03cd25b71f09567dcf074ff59c8046" title="Ejecuta la transición de la FSM al estado indicado." alt="" coords="310,69,388,96"/>
+<area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="79,117,116,97,160,80,230,72,297,75,292,77,230,77,161,85,118,101,82,121"/>
+<area shape="rect" id="Node000005" href="$group__hardware.html#ga9f11914e61e4c2bf68e9b8cc91db5628" title="Escribe dos líneas de texto en el LCD 16×2." alt="" coords="446,5,529,32"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="72,118,109,87,134,70,160,58,231,36,304,23,373,17,433,16,428,18,373,22,305,28,232,41,162,62,136,75,113,91,76,122"/>
+<area shape="rect" id="Node000007" href="$group__actuadores.html#ga2a424a53e71040ea1a466f4d0adf0b6a" title="Apaga todos los actuadores de señalización." alt="" coords="436,132,539,159"/>
+<area shape="poly" id="edge11_Node000001_Node000007" title=" " alt="" coords="113,132,422,141,420,146,113,137"/>
+<area shape="rect" id="Node000008" href="$group__sensores.html#ga29e92705724ea23b5b79bc544e335cc2" title="Lee el nivel de iluminación con el KY&#45;018 (LDR)." alt="" coords="180,196,243,223"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="88,145,171,187,167,190,87,150"/>
+<area shape="rect" id="Node000009" href="$group__sensores.html#gab96dd9550872ccc75be0a22d78a79863" title="Lee la temperatura con el termistor NTC del KY&#45;013." alt="" coords="174,247,248,273"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="72,145,111,187,162,233,169,239,164,238,159,237,107,191,71,150"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="262,96,297,92,292,94,264,101"/>
+<area shape="rect" id="Node000004" href="$group__actuadores.html#gae1fd3f671724f825c66f4c23af9fd268" title="Abre la puerta girando el servo a 90°." alt="" coords="445,69,530,96"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="388,80,432,82,427,83,389,85"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="379,66,446,38,441,40,381,71"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="381,94,445,125,440,125,380,99"/>
+<area shape="rect" id="Node000006" href="$group__hardware.html#gaf97afdf00af0e116e9b5957f6a470fc2" title="Objeto LCD de 16×2. Pines: RS=12, EN=11, D4=5, D5=4, D6=3, D7=2." alt="" coords="587,5,625,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="529,16,574,18,569,19,530,21"/>
+</map>

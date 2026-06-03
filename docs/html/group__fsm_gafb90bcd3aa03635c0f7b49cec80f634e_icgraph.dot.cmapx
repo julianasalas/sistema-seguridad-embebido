@@ -1,0 +1,7 @@
+<map id="manejarInicio" name="manejarInicio">
+<area shape="rect" id="Node000001" title="Manejador del estado EST_INICIO." alt="" coords="246,5,344,32"/>
+<area shape="rect" id="Node000002" href="$group__tareas.html#gabf2ea295dd40f5ef9c4104310ad3d0d7" title="Tarea FreeRTOS principal: ciclo de despacho de la FSM." alt="" coords="107,5,198,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,19,198,21,198,16,233,19"/>
+<area shape="rect" id="Node000003" href="$sistema__seguridad_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="Inicialización del sistema." alt="" coords="5,5,59,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="88,19,59,21,59,16,94,18"/>
+</map>

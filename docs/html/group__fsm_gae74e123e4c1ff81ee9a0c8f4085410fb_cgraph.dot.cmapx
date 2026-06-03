@@ -1,0 +1,13 @@
+<map id="activarAlarma" name="activarAlarma">
+<area shape="rect" id="Node000001" title="Registra y activa una alarma del sistema." alt="" coords="5,56,107,83"/>
+<area shape="rect" id="Node000002" href="$group__fsm.html#gaee03cd25b71f09567dcf074ff59c8046" title="Ejecuta la transición de la FSM al estado indicado." alt="" coords="155,56,233,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,67,141,68,136,70,108,72"/>
+<area shape="rect" id="Node000003" href="$group__actuadores.html#gae1fd3f671724f825c66f4c23af9fd268" title="Abre la puerta girando el servo a 90°." alt="" coords="290,5,374,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="232,53,277,39,282,37,234,58"/>
+<area shape="rect" id="Node000004" href="$group__hardware.html#ga9f11914e61e4c2bf68e9b8cc91db5628" title="Escribe dos líneas de texto en el LCD 16×2." alt="" coords="291,56,373,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="233,67,278,69,273,70,234,72"/>
+<area shape="rect" id="Node000006" href="$group__actuadores.html#ga2a424a53e71040ea1a466f4d0adf0b6a" title="Apaga todos los actuadores de señalización." alt="" coords="281,107,383,133"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="233,81,282,101,276,101,232,86"/>
+<area shape="rect" id="Node000005" href="$group__hardware.html#gaf97afdf00af0e116e9b5957f6a470fc2" title="Objeto LCD de 16×2. Pines: RS=12, EN=11, D4=5, D5=4, D6=3, D7=2." alt="" coords="431,56,470,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="374,67,419,69,413,70,374,72"/>
+</map>

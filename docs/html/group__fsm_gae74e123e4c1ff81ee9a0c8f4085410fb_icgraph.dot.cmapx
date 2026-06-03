@@ -1,0 +1,10 @@
+<map id="activarAlarma" name="activarAlarma">
+<area shape="rect" id="Node000001" title="Registra y activa una alarma del sistema." alt="" coords="262,31,363,57"/>
+<area shape="rect" id="Node000002" href="$group__tareas.html#ga68f0ae52239a006625901567e8dfe5a5" title="Tarea FreeRTOS de monitoreo ambiental (temperatura y luz)." alt="" coords="107,5,214,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,33,214,30,214,25,249,33"/>
+<area shape="rect" id="Node000004" href="$group__tareas.html#ga9603b1c503abd2bd6f6e355fed914150" title="Tarea FreeRTOS de monitoreo de intrusos." alt="" coords="112,56,208,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="249,55,209,64,208,59,244,55"/>
+<area shape="rect" id="Node000003" href="$sistema__seguridad_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="Inicialización del sistema." alt="" coords="5,31,59,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="89,34,60,41,58,36,94,31"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="95,58,59,52,59,47,99,56"/>
+</map>

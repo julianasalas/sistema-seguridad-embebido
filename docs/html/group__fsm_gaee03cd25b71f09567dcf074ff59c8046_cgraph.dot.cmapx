@@ -1,0 +1,11 @@
+<map id="irAEstado" name="irAEstado">
+<area shape="rect" id="Node000001" title="Ejecuta la transición de la FSM al estado indicado." alt="" coords="5,56,84,83"/>
+<area shape="rect" id="Node000002" href="$group__actuadores.html#gae1fd3f671724f825c66f4c23af9fd268" title="Abre la puerta girando el servo a 90°." alt="" coords="141,5,225,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,53,132,36,128,40,84,58"/>
+<area shape="rect" id="Node000003" href="$group__hardware.html#ga9f11914e61e4c2bf68e9b8cc91db5628" title="Escribe dos líneas de texto en el LCD 16×2." alt="" coords="142,56,224,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="83,67,129,68,124,71,84,72"/>
+<area shape="rect" id="Node000005" href="$group__actuadores.html#ga2a424a53e71040ea1a466f4d0adf0b6a" title="Apaga todos los actuadores de señalización." alt="" coords="132,107,234,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="84,81,132,100,127,102,83,86"/>
+<area shape="rect" id="Node000004" href="$group__hardware.html#gaf97afdf00af0e116e9b5957f6a470fc2" title="Objeto LCD de 16×2. Pines: RS=12, EN=11, D4=5, D5=4, D6=3, D7=2." alt="" coords="282,56,320,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="224,67,269,69,264,70,225,72"/>
+</map>

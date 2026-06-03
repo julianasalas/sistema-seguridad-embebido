@@ -1,0 +1,15 @@
+<map id="sistema_seguridad.cpp" name="sistema_seguridad.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="307,5,462,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,151,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="332,35,147,79,146,73,330,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="174,80,251,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="357,32,258,76,256,71,352,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="274,80,383,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="377,31,349,70,346,66,373,34"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="408,80,474,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="396,30,424,69,419,67,393,35"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="498,80,552,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="410,30,489,73,484,72,408,35"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="576,80,668,107"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="426,30,569,75,563,75,426,35"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Sistema de Seguridad" name="Sistema de Seguridad">
+<area shape="rect" id="Node000006" href="$group__actuadores.html" title=" " alt="" coords="218,5,368,32"/>
+<area shape="rect" id="Node000007" href="$group__config.html" title=" " alt="" coords="203,56,383,83"/>
+<area shape="rect" id="Node000003" href="$group__fsm.html" title=" " alt="" coords="223,107,363,149"/>
+<area shape="rect" id="Node000002" href="$group__hardware.html" title=" " alt="" coords="217,173,369,200"/>
+<area shape="rect" id="Node000005" href="$group__sensores.html" title=" " alt="" coords="223,224,362,251"/>
+<area shape="rect" id="Node000001" title="Módulo raíz del sistema de seguridad embebido." alt="" coords="5,144,155,171"/>
+<area shape="rect" id="Node000004" href="$group__tareas.html" title=" " alt="" coords="230,275,356,301"/>
+</map>

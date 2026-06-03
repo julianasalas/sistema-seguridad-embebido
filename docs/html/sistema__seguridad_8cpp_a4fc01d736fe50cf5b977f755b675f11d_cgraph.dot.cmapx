@@ -1,0 +1,76 @@
+<map id="setup" name="setup">
+<area shape="rect" id="Node000001" title="Inicialización del sistema." alt="" coords="5,157,59,184"/>
+<area shape="rect" id="Node000002" href="$group__hardware.html#gaac7b29dc45caaaca67299571f6a2dcc0" title="Retorna los bytes libres en el heap de RAM." alt="" coords="117,5,188,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="37,156,63,106,82,77,105,49,118,39,115,44,109,52,87,80,68,109,42,158"/>
+<area shape="rect" id="Node000003" href="$group__hardware.html#gaf97afdf00af0e116e9b5957f6a470fc2" title="Objeto LCD de 16×2. Pines: RS=12, EN=11, D4=5, D5=4, D6=3, D7=2." alt="" coords="891,385,930,412"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="43,156,70,130,105,107,158,84,201,72,246,67,304,67,635,67,664,69,691,77,717,88,741,103,783,142,819,189,849,239,873,289,904,371,898,370,868,291,845,242,815,192,779,145,737,107,714,93,690,82,663,74,635,72,304,72,247,73,202,77,160,89,108,112,74,134,48,158"/>
+<area shape="rect" id="Node000004" href="$group__hardware.html#ga3dfc78456f71b1381f9c7021a01efc95" title="Objeto lector RFID MFRC522." alt="" coords="614,411,653,437"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="57,158,143,127,201,111,266,99,333,93,402,97,468,112,499,126,528,143,557,168,580,199,598,233,612,269,628,339,634,395,629,394,623,340,607,270,593,235,576,202,553,172,525,147,496,131,466,118,401,102,333,99,266,104,202,116,145,132,61,161"/>
+<area shape="rect" id="Node000005" href="$group__tareas.html#ga68f0ae52239a006625901567e8dfe5a5" title="Tarea FreeRTOS de monitoreo ambiental (temperatura y luz)." alt="" coords="251,259,359,285"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="58,178,255,251,251,254,60,183"/>
+<area shape="rect" id="Node000013" href="$group__tareas.html#gabf2ea295dd40f5ef9c4104310ad3d0d7" title="Tarea FreeRTOS principal: ciclo de despacho de la FSM." alt="" coords="107,613,198,640"/>
+<area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="37,182,146,598,141,599,36,187"/>
+<area shape="rect" id="Node000022" href="$group__tareas.html#ga9603b1c503abd2bd6f6e355fed914150" title="Tarea FreeRTOS de monitoreo de intrusos." alt="" coords="257,1095,353,1121"/>
+<area shape="poly" id="edge42_Node000001_Node000022" title=" " alt="" coords="34,182,42,256,55,372,77,510,109,651,153,780,205,903,254,1008,292,1081,287,1081,250,1010,200,905,148,782,104,653,71,511,50,373,37,257,34,187"/>
+<area shape="rect" id="Node000006" href="$group__fsm.html#gae74e123e4c1ff81ee9a0c8f4085410fb" title="Registra y activa una alarma del sistema." alt="" coords="419,512,520,539"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="315,283,415,441,453,499,447,499,410,444,315,288"/>
+<area shape="rect" id="Node000007" href="$group__fsm.html#gaee03cd25b71f09567dcf074ff59c8046" title="Ejecuta la transición de la FSM al estado indicado." alt="" coords="595,664,673,691"/>
+<area shape="poly" id="edge11_Node000005_Node000007" title=" " alt="" coords="316,283,357,336,414,397,445,419,472,432,500,446,529,472,562,516,590,565,626,650,621,649,585,567,558,519,525,475,496,451,470,437,442,423,411,401,353,340,316,288"/>
+<area shape="rect" id="Node000009" href="$group__hardware.html#ga9f11914e61e4c2bf68e9b8cc91db5628" title="Escribe dos líneas de texto en el LCD 16×2." alt="" coords="751,715,833,741"/>
+<area shape="poly" id="edge12_Node000005_Node000009" title=" " alt="" coords="350,256,428,239,475,234,523,232,572,237,618,249,660,270,695,302,713,328,726,354,733,379,736,404,733,453,723,501,713,549,709,598,711,623,717,648,727,674,743,701,745,704,739,704,739,704,722,677,712,650,706,624,703,598,708,548,718,500,728,452,731,404,728,380,721,356,709,331,691,306,657,274,616,254,571,242,523,238,475,239,429,244,353,260"/>
+<area shape="rect" id="Node000010" href="$group__actuadores.html#ga2a424a53e71040ea1a466f4d0adf0b6a" title="Apaga todos los actuadores de señalización." alt="" coords="741,867,843,893"/>
+<area shape="poly" id="edge15_Node000005_Node000010" title=" " alt="" coords="359,283,556,340,647,371,678,385,695,397,711,427,722,469,731,570,735,674,738,718,744,753,761,806,780,853,775,852,756,808,738,754,733,719,730,674,726,570,717,469,706,429,691,400,675,390,645,376,555,345,360,289"/>
+<area shape="rect" id="Node000011" href="$group__sensores.html#ga29e92705724ea23b5b79bc544e335cc2" title="Lee el nivel de iluminación con el KY&#45;018 (LDR)." alt="" coords="438,259,501,285"/>
+<area shape="poly" id="edge13_Node000005_Node000011" title=" " alt="" coords="358,270,425,270,420,274,361,274"/>
+<area shape="rect" id="Node000012" href="$group__sensores.html#gab96dd9550872ccc75be0a22d78a79863" title="Lee la temperatura con el termistor NTC del KY&#45;013." alt="" coords="432,157,507,184"/>
+<area shape="poly" id="edge14_Node000005_Node000012" title=" " alt="" coords="325,256,411,200,432,190,429,194,414,205,329,260"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="507,537,528,549,555,572,580,599,618,651,613,651,576,603,552,576,525,553,508,542"/>
+<area shape="rect" id="Node000008" href="$group__actuadores.html#gae1fd3f671724f825c66f4c23af9fd268" title="Abre la puerta girando el servo a 90°." alt="" coords="750,664,834,691"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="673,675,737,676,732,678,675,680"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="673,687,739,710,734,711,674,692"/>
+<area shape="poly" id="edge10_Node000007_Node000010" title=" " alt="" coords="647,689,774,854,769,855,645,694"/>
+<area shape="poly" id="edge9_Node000009_Node000003" title=" " alt="" coords="828,712,841,701,853,680,864,650,882,574,905,430,908,425,887,575,869,652,858,682,845,704,832,716"/>
+<area shape="poly" id="edge17_Node000013_Node000007" title=" " alt="" coords="198,629,581,670,578,674,199,634"/>
+<area shape="rect" id="Node000014" href="$group__fsm.html#ga5f7a9dcc2a087a1d7d9813cb5b7ce098" title="Manejador del estado EST_ABRIENDO." alt="" coords="246,563,364,589"/>
+<area shape="poly" id="edge18_Node000013_Node000014" title=" " alt="" coords="193,611,250,593,246,597,197,615"/>
+<area shape="rect" id="Node000016" href="$group__fsm.html#gac808aafeb5903e9b330785699ccb0a6c" title="Manejador del estado EST_ALARMA." alt="" coords="415,917,524,944"/>
+<area shape="poly" id="edge21_Node000013_Node000016" title=" " alt="" coords="162,638,199,690,248,752,326,830,414,896,431,909,425,909,411,901,322,834,244,755,195,693,162,643"/>
+<area shape="rect" id="Node000017" href="$group__fsm.html#ga2d0a3d09291c6fdbf9bcf10a2c682083" title="Manejador del estado EST_BLOQUEO." alt="" coords="412,968,527,995"/>
+<area shape="poly" id="edge24_Node000013_Node000017" title=" " alt="" coords="156,638,166,683,182,743,209,808,227,839,248,868,283,899,323,925,364,945,405,962,400,963,362,950,320,929,279,903,244,871,222,842,204,811,177,744,161,684,155,643"/>
+<area shape="rect" id="Node000019" href="$group__fsm.html#ga5ab2ebd90930ec670038414547bf3a55" title="Manejador del estado EST_CONFIG." alt="" coords="417,360,522,387"/>
+<area shape="poly" id="edge29_Node000013_Node000019" title=" " alt="" coords="168,611,244,549,440,394,438,399,248,553,172,614"/>
+<area shape="rect" id="Node000020" href="$group__fsm.html#gafb90bcd3aa03635c0f7b49cec80f634e" title="Manejador del estado EST_INICIO." alt="" coords="256,715,354,741"/>
+<area shape="poly" id="edge33_Node000013_Node000020" title=" " alt="" coords="173,638,273,705,268,707,174,643"/>
+<area shape="poly" id="edge20_Node000014_Node000007" title=" " alt="" coords="317,561,357,527,383,510,411,498,444,487,471,482,498,485,528,498,548,512,566,529,595,570,615,612,628,649,622,648,610,614,590,572,562,533,545,516,525,502,496,490,471,487,445,492,413,502,385,515,360,531,321,564"/>
+<area shape="rect" id="Node000015" href="$group__actuadores.html#gaed4c8c6afaab193de8058bd95a226644" title="Cierra la puerta girando el servo a 0°." alt="" coords="423,563,516,589"/>
+<area shape="poly" id="edge19_Node000014_Node000015" title=" " alt="" coords="364,574,410,575,406,577,366,578"/>
+<area shape="poly" id="edge22_Node000016_Node000007" title=" " alt="" coords="478,915,524,847,615,706,618,702,529,849,483,918"/>
+<area shape="poly" id="edge23_Node000016_Node000010" title=" " alt="" coords="523,921,693,896,728,892,723,894,693,901,525,926"/>
+<area shape="poly" id="edge26_Node000017_Node000007" title=" " alt="" coords="510,965,525,954,548,925,568,893,598,823,616,757,628,708,630,704,622,759,603,825,573,895,553,928,529,958,513,970"/>
+<area shape="poly" id="edge27_Node000017_Node000009" title=" " alt="" coords="504,965,525,954,598,902,665,846,765,754,769,751,669,850,601,906,528,958,507,970"/>
+<area shape="poly" id="edge28_Node000017_Node000010" title=" " alt="" coords="484,992,523,1026,548,1043,576,1055,609,1065,636,1071,662,1068,692,1055,710,1041,727,1025,753,985,771,944,783,910,786,906,776,946,758,988,731,1028,714,1045,694,1060,663,1073,635,1076,607,1071,574,1060,546,1047,520,1030,483,997"/>
+<area shape="rect" id="Node000018" href="$group__actuadores.html#ga9040ae03ed89ee4cdb3e20193ae912b9" title="Detecta la pulsación del botón físico con anti&#45;rebote por ticks." alt="" coords="575,1019,693,1045"/>
+<area shape="poly" id="edge25_Node000017_Node000018" title=" " alt="" coords="515,993,576,1013,571,1014,516,998"/>
+<area shape="poly" id="edge32_Node000019_Node000004" title=" " alt="" coords="515,385,602,413,597,415,516,390"/>
+<area shape="poly" id="edge30_Node000019_Node000007" title=" " alt="" coords="503,385,529,403,551,433,570,466,600,534,619,598,630,649,625,648,614,599,595,536,566,468,547,436,525,407,504,390"/>
+<area shape="poly" id="edge31_Node000019_Node000009" title=" " alt="" coords="521,361,564,357,610,360,656,372,676,382,695,397,711,415,723,433,734,470,733,508,727,545,719,583,716,622,722,661,743,701,745,705,740,704,739,704,717,663,711,622,714,582,721,544,728,507,728,471,718,435,707,418,691,401,673,387,654,377,610,365,564,363,524,365"/>
+<area shape="poly" id="edge34_Node000020_Node000007" title=" " alt="" coords="353,713,412,700,500,687,581,680,577,683,501,693,413,705,356,717"/>
+<area shape="poly" id="edge35_Node000020_Node000009" title=" " alt="" coords="353,739,413,751,501,756,589,753,670,745,738,737,733,739,670,750,589,758,501,761,412,756,355,744"/>
+<area shape="poly" id="edge36_Node000020_Node000010" title=" " alt="" coords="336,739,441,785,575,833,653,853,728,869,723,871,652,858,574,839,439,790,336,745"/>
+<area shape="rect" id="Node000021" href="$group__hardware.html#gada75dfc0a4a2cbd90fb6b3f8228b2590" title="Lee una tarjeta RFID y autoriza o deniega el acceso." alt="" coords="420,715,519,741"/>
+<area shape="poly" id="edge37_Node000020_Node000021" title=" " alt="" coords="353,726,407,727,402,729,356,730"/>
+<area shape="poly" id="edge41_Node000021_Node000004" title=" " alt="" coords="476,713,616,453,620,449,480,716"/>
+<area shape="poly" id="edge38_Node000021_Node000007" title=" " alt="" coords="514,712,582,692,577,695,517,716"/>
+<area shape="poly" id="edge39_Node000021_Node000009" title=" " alt="" coords="519,725,738,727,733,729,520,731"/>
+<area shape="poly" id="edge40_Node000021_Node000010" title=" " alt="" coords="500,739,751,859,746,861,500,744"/>
+<area shape="poly" id="edge43_Node000022_Node000006" title=" " alt="" coords="306,1093,356,799,388,633,401,576,410,549,415,547,412,551,415,552,406,578,393,634,362,800,311,1095"/>
+<area shape="poly" id="edge45_Node000022_Node000007" title=" " alt="" coords="310,1093,347,1011,376,956,410,904,459,842,513,785,607,699,603,703,516,789,463,846,414,907,381,959,352,1013,314,1096"/>
+<area shape="poly" id="edge46_Node000022_Node000009" title=" " alt="" coords="353,1106,439,1104,539,1097,632,1081,667,1070,691,1055,711,1033,723,1011,728,989,730,966,729,915,731,886,738,854,777,758,780,754,744,855,736,887,734,915,735,966,734,990,728,1013,716,1036,695,1059,669,1075,633,1086,540,1102,439,1109,354,1111"/>
+<area shape="poly" id="edge48_Node000022_Node000010" title=" " alt="" coords="328,1119,367,1140,413,1156,470,1164,526,1156,577,1144,617,1131,652,1111,691,1077,724,1036,750,990,768,945,781,911,785,907,773,947,754,992,728,1039,695,1081,655,1115,619,1136,579,1149,527,1161,470,1170,412,1161,365,1145,328,1125"/>
+<area shape="rect" id="Node000023" href="$group__sensores.html#ga3d2ab528c2b581372c8e78a8ed8d0456" title="Detecta campo magnético con el sensor Hall KY&#45;035." alt="" coords="438,1221,501,1248"/>
+<area shape="poly" id="edge44_Node000022_Node000023" title=" " alt="" coords="321,1119,362,1158,414,1201,431,1213,425,1213,411,1205,358,1162,319,1124"/>
+<area shape="rect" id="Node000024" href="$group__sensores.html#ga977c1be0b0a923cefb4fc18c85f77ae1" title="Lee el nivel de ruido con el KY&#45;037 (micrófono)." alt="" coords="438,1272,501,1299"/>
+<area shape="poly" id="edge47_Node000022_Node000024" title=" " alt="" coords="314,1119,352,1185,380,1224,414,1258,427,1269,421,1267,411,1262,376,1227,347,1188,312,1124"/>
+<area shape="rect" id="Node000025" href="$group__sensores.html#ga1073cc7ee88838657a31f2166d08373e" title="Consulta el estado lógico de la puerta." alt="" coords="433,1120,506,1147"/>
+<area shape="poly" id="edge49_Node000022_Node000025" title=" " alt="" coords="353,1113,420,1125,415,1126,354,1118"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="leerMic" name="leerMic">
+<area shape="rect" id="Node000001" title="Lee el nivel de ruido con el KY&#45;037 (micrófono)." alt="" coords="251,5,314,32"/>
+<area shape="rect" id="Node000002" href="$group__tareas.html#ga9603b1c503abd2bd6f6e355fed914150" title="Tarea FreeRTOS de monitoreo de intrusos." alt="" coords="107,5,203,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,19,203,21,203,16,238,19"/>
+<area shape="rect" id="Node000003" href="$sistema__seguridad_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="Inicialización del sistema." alt="" coords="5,5,59,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="88,19,59,21,59,16,93,18"/>
+</map>

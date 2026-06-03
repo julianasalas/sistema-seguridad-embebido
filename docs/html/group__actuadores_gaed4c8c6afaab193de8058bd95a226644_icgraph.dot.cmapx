@@ -1,0 +1,9 @@
+<map id="cerrarPuerta" name="cerrarPuerta">
+<area shape="rect" id="Node000001" title="Cierra la puerta girando el servo a 0°." alt="" coords="412,5,505,32"/>
+<area shape="rect" id="Node000002" href="$group__fsm.html#ga5f7a9dcc2a087a1d7d9813cb5b7ce098" title="Manejador del estado EST_ABRIENDO." alt="" coords="246,5,364,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="394,19,365,21,364,16,399,19"/>
+<area shape="rect" id="Node000003" href="$group__tareas.html#gabf2ea295dd40f5ef9c4104310ad3d0d7" title="Tarea FreeRTOS principal: ciclo de despacho de la FSM." alt="" coords="107,5,198,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="227,19,198,21,198,16,233,19"/>
+<area shape="rect" id="Node000004" href="$sistema__seguridad_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="Inicialización del sistema." alt="" coords="5,5,59,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="88,19,59,21,59,16,94,18"/>
+</map>
